@@ -100,4 +100,52 @@ NodeJS : https://nodejs.org/en/
 
 
 
+Either go with "master", "main" 
+
+### Git Commands 
+> git init 
+> git branch <branchName> -- create a branch 
+> git checkout <branchName> - checkout / switch branch 
+> git branch --merged  - to show if the current branch is merged from other branch 
+> git branch --no-merged - to show if the current branch is not merged from other branch 
+> git checkout main 
+> git merge new_branch 
+>  git checkout -b dev1  (create and switch the branch)
+
+### Git Reset 
+* soft reset - will keep the file in stagin area but not commit 
+* mixed reset (defult) - this will take the file to untracked area 
+* hard reset - the content is also take off 
+
+In any case if you want to get back your code, have the commit id and you can checkout from there 
+
+> The git reset command is a complex and versatile tool for undoing changes. It has three primary forms of invocation. These forms correspond to command line arguments --soft, --mixed, --hard. 
+
+> git stash temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+
+
+In Git we have 4 area 
+1. Untracked files 
+2. Tracked (add)
+3. committed files (commit)
+4. stash
+
+### working with stash
+> git stash save "message"
+> git stash list 
+> git stash pop - it applied and removes
+> git stash apply stash@{<NUMBER>} - applies and doesnot remove 
+> git stash drop stash@{<NUMBER>} - to remove the stash 
+> git stash clear - to clear all the stash 
+> git stash show stash@{<NUMBER>} - to show the stash 
+> git shash show -p  stash@{<NUMBER>} - to show the actual code 
+
+
+
+
+
+
+
+
+
 
