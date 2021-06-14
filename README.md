@@ -165,8 +165,7 @@ to delete the branch on remote
 
 ### Branching Stratergy 
 
-<img src="./images/branching-stratergy.drawio" alt="work image">
-
+<img src="./images/branching-stratergy.png" alt="branching stratergy">
 
 
 
@@ -177,6 +176,8 @@ to delete the branch on remote
 2. Pipe line project * 
    1. you can have groovy code  in Jenkins 
    2. You can have groovy code in "Jenkinsfile" on remote SCM 
+
+
 
 ```
 pipeline {
