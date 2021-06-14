@@ -1,0 +1,648 @@
+730  pwd
+  731  git .git/HEAD
+  732  cat .git/HEAD
+  733  ls -la ./.git/refs/heads
+  734  ls -la ./.git/refs/heads/remotes
+  735  ls -la ./.git/refs/heads/remotes/master
+  736  clear
+  737  git log --oneline 
+  738  git branch --merged
+  739  clear
+  740  git branch --no-merged
+  741  git help branch 
+  742  clear
+  743  ls
+  744  cd
+  745  cd Desktop
+  746  s
+  747  ls
+  748  clear
+  749  mkdir git-works
+  750  cd git-works
+  751  ls
+  752  clear
+  753  ls -la
+  754  git init
+  755  git branch 
+  756  git branch -a
+  757  git config --global init.defaultBranch main
+  758  clear
+  759  git branch 
+  760  git branch -a
+  761  git branch main 
+  762  git branch master
+  763  ls
+  764  pwd
+  765  ls -la
+  766  clear
+  767  git help branch 
+  768  ls
+  769  git branch master
+  770  git branch master1
+  771  git checkout -b master
+  772  git branch 
+  773  git branch -a
+  774  vi first.html
+  775  git commit -am "first commit"
+  776  git add . 
+  777  git commit -am "first commit"
+  778  clear
+  779  ls
+  780  git branch 
+  781  git status
+  782  ls
+  783  git logs --oneline 
+  784  git logs --oneline 
+  785  clear
+  786  git log --oneline 
+  787  git checkout -b new_content
+  788  git branch 
+  789  ls
+  790  vi first.html
+  791  git commit -am "heading added"
+  792  ls
+  793  git status
+  794  git log 
+  795  git log --oneline 
+  796  git checkout -b new_para
+  797  git --merged
+  798  git branch --merged
+  799  git status
+  800  ls
+  801  vi first.html
+  802  git commit -am "added para"
+  803  git branch new_content --merged
+  804  git branch  --merged
+  805  git checkout new_content
+  806  git branch  --merged
+  807  git checkout new_para
+  808  git log --oneline 
+  809  git log -3
+  810  clear
+  811  git status
+  812  git branch 
+  813  git log --oneline
+  814  vi first.html
+  815  git commit -am "para 2"
+  816  git status
+  817  clear
+  818  ls
+  819  git log --oneline
+  820  git log -3
+  821  git log --oneline
+  822  git reset --soft HEAD^
+  823  git log --oneline
+  824  git status
+  825  git reset --soft 64060dd
+  826  git log --oneline
+  827  git reset --soft HEAD^^
+  828  git status
+  829  git log --oneline -3
+  830  git status
+  831  git log 
+  832  git status
+  833  git commit -m "adde para1, para2"
+  834  git log --oneline -3
+  835  git show 64060dd
+  836  git show f8d14d7
+  837  clear
+  838  history -20
+  839  history -40
+  840  git branch -a
+  841  git branch -m new_para new_rename_para
+  842  git branch -a
+  843  clear
+  844  git config --global alias.co checkout\n
+  845  git branch -a 
+  846  git co master
+  847  git branch -a 
+  848  clear
+  849  git branch -a
+  850  git co new_renate_para
+  851  git co new_rename_para
+  852  git status
+  853  git reset HEAD^
+  854  git status
+  855  clear
+  856  git log --oneline -3
+  857  git status
+  858  git -am "added para & new para"
+  859  git commit -am "added para & new para"
+  860  git status
+  861  clear
+  862  git log --oneline -3
+  863  vi first.html
+  864  git log --oneline -3
+  865  git commit -am "added para3"
+  866  git log --oneline -3
+  867  git branch 
+  868  git status
+  869  clear
+  870  git log 
+  871  clear
+  872  git log --oneline -3
+  873  git log --oneline
+  874  git reset --hard HEAD^
+  875  git log --oneline -3
+  876  git status
+  877  git reset --hard 52cc61d
+  878  git log --oneline -3
+  879  clear
+  880  git branch -a
+  881  git log --oneline -4 
+  882  git reset --hard new_content
+  883  git log --oneline -4 
+  884  git log --oneline -4 
+  885  cat first.html
+  886  clear
+  887  git branch -a
+  888  cat first.html
+  889  git co master
+  890  ls
+  891  cat first.html
+  892  git diff master..new_rename_para
+  893  git merge new_rename_para
+  894  ls
+  895  cat first.html
+  896  git log --oneline -3
+  897  git diff master..new_rename_para
+  898  git branch --merged
+  899  clear
+  900  git branch 
+  901  git log --oneline --graph --all --decorate
+  902  git co new_rename-para
+  903  git co new_rename_para
+  904  git log --oneline --graph --all --decorate
+  905  git branch 
+  906  vi first.html
+  907  git commit -am "added para1\n"
+  908  clear
+  909  git log --oneline --graph --all --decorate
+  910  git status
+  911  git -b co new_branch new_rename_para
+  912  git co -b  new_branch new_rename_para
+  913  git branch -a
+  914  vi first.html
+  915  git commit -am "added para2"
+  916  clear
+  917  ls
+  918  git checkout master
+  919  git log --oneline --graph --all --decorate
+  920  git co new_rename_para
+  921  vi first.html
+  922  git commit -am "added para3"
+  923  git log --oneline --graph --all --decorate
+  924  clear
+  925  git co master
+  926  clear
+  927  ls
+  928  git log --oneline --graph --all --decorate
+  929  git branch 
+  930  git merge new_branch
+  931  git log --oneline --graph --all --decorate
+  932  git log --oneline --graph --all --decorate
+  933  git branch 
+  934  git status
+  935  cat first.html
+  936  git merge new_branch 
+  937  clear
+  938  git log --oneline --graph --all --decorate
+  939  git merge new_rename_para
+  940  vi first.html
+  941  git commit -am "manual merge"
+  942  git status
+  943  git log --oneline --graph --all --decorate
+  944  git log --oneline --graph  --decorate
+  945  git log --oneline --graph  --decorate
+  946  git log --oneline --graph  --decorate
+  947  git log --oneline --graph 
+  948  git log --oneline --graph 
+  949  git log --oneline --decorate
+  950  clear
+  951  git log --oneline --decorate
+  952  git log --oneline --decorate --graph 
+  953  clear
+  954  git shwo --color-words
+  955  git show --color-words
+  956  clear
+  957  git branch 
+  958  git co new_content 
+  959  cat first.html
+  960  vi first.html
+  961  git commit -am "para with fun"
+  962  git co master
+  963  git co new_content 
+  964  cat first.html
+  965  vi first.html
+  966  git co master
+  967  git stash save "its fun again"
+  968  git status
+  969  git co master
+  970  git co new_content
+  971  git stash list
+  972  clear
+  973  git stash list
+  974  git stash show stash@{0}
+  975  git stash show -p stash@{0}
+  976  git stash pop
+  977  cat first.html
+  978  git status
+  979  git stash apply 
+  980  git stash list
+  981  clear
+  982  ls
+  983  git status 
+  984  cat first.html
+  985  git stash save "testing 1"
+  986  git status
+  987  git stash list
+  988  cat first.html
+  989  git stash apply stash@{0}
+  990  git status
+  991  cat first.html
+  992  git stash list 
+  993  git stash drop stash@{0}
+  994  git stash list 
+  995  clear
+  996  git help reflog 
+  997  pwd
+  998  ls
+  999  git reflog 
+ 1000  clear
+ 1001  cd /Volumes/Kanchan/MyTrainings/sapient/freshers-2021-jun-asde
+ 1002  ls
+ 1003  git status
+ 1004  clear
+ 1005  git commit -am "added first notes"
+ 1006  git branch
+ 1007  git push origin masin
+ 1008  git push origin main
+ 1009  clear
+ 1010  git status
+ 1011  git add . 
+ 1012  git commit -m "added images folder"
+ 1013  git push origin main
+ 1014  java -version
+ 1015  clear
+ 1016  ls
+ 1017  ls scrible-images
+ 1018  cd scrible-images
+ 1019  ls
+ 1020  rm -rf * 
+ 1021  clear
+ 1022  ls
+ 1023  pwd
+ 1024  cd .. 
+ 1025  clear
+ 1026  git add . 
+ 1027  git commit -am "removed tmep files"
+ 1028  git push origin main 
+ 1029  pwd
+ 1030  ls
+ 1031  clear
+ 1032  cd
+ 1033  cd Desktop
+ 1034  ls
+ 1035  clear
+ 1036  pwd
+ 1037  mkdir git-works
+ 1038  cd git-works
+ 1039  pwd
+ 1040  git add . 
+ 1041  ls -la
+ 1042  git init 
+ 1043  ls -la 
+ 1044  git branch 
+ 1045  git branch -a 
+ 1046  git branch master 
+ 1047  git branch main 
+ 1048  clear
+ 1049  pwd
+ 1050  ls
+ 1051  ls -la
+ 1052  git branch master
+ 1053  git branch new_branch
+ 1054  git help branch 
+ 1055  clear
+ 1056  pwd
+ 1057  ls
+ 1058  touch hello.html
+ 1059  git add . 
+ 1060  git commit -m "added hello.html"
+ 1061  git branch 
+ 1062  git branch -a 
+ 1063  vi hello.html
+ 1064  git status
+ 1065  git add . 
+ 1066  git status
+ 1067  git commit -m "first commit"
+ 1068  git status
+ 1069  git log --oneline
+ 1070  git log 
+ 1071  clear
+ 1072  git log --oneline
+ 1073  ls
+ 1074  git status
+ 1075  git branch new_branch
+ 1076  git branch 
+ 1077  ls .git
+ 1078  cat .git/HEAD
+ 1079  cat .git/refs/heads
+ 1080  ls -la .git/refs/heads
+ 1081  clear
+ 1082  git branch -a 
+ 1083  git diff main..new_branch
+ 1084  git checkout new_branch
+ 1085  git branch 
+ 1086  vi hello.html
+ 1087  git commit -am "added para1"
+ 1088  vi hello.html
+ 1089  git commit -am "added para2"
+ 1090  git log --oneline 
+ 1091  git diff new_branch..main
+ 1092  git diff main..new_branch
+ 1093  git diff --color-words main..new_branch
+ 1094  git status
+ 1095  clear
+ 1096  git checkout main 
+ 1097  git branch --merged
+ 1098  git branch --no-merged
+ 1099  git branch 
+ 1100  git merge new_branch
+ 1101  cat hello.html
+ 1102  git --merged
+ 1103  git branch --merged
+ 1104  git branch --no-merged
+ 1105  clear
+ 1106  git branch -a 
+ 1107  git help branch 
+ 1108  git branch -d new_branch
+ 1109  git branch -a 
+ 1110  clear
+ 1111  git branch -a 
+ 1112  git checkout -b dev1
+ 1113  git branch -a
+ 1114  ls
+ 1115  vi hello.html
+ 1116  git commit -am "added para3"
+ 1117  git diff dev1..main
+ 1118  git diff dev1^..main
+ 1119  clear
+ 1120  git log --oneline 
+ 1121  git diff dev1..main
+ 1122  git diff dev1^..main
+ 1123  git diff dev1^^..main
+ 1124  ls
+ 1125  vi hello.html
+ 1126  clear
+ 1127  git commit -am "added title"
+ 1128  git log --oneline
+ 1129  git reset --soft HEAD^
+ 1130  git log --oneline
+ 1131  git status
+ 1132  git log --oneline
+ 1133  git reset --soft HEAD^
+ 1134  cat hello.html
+ 1135  git status
+ 1136  git log --oneline
+ 1137  git commit -m "added title and para"
+ 1138  git status
+ 1139  git log --oneline
+ 1140  cat hello.html
+ 1141  clear
+ 1142  git status
+ 1143  vi hello.html
+ 1144  vi hello.html
+ 1145  git status 
+ 1146  git checkout main
+ 1147  git branch 
+ 1148  clear
+ 1149  git status
+ 1150  git commit -am "changed to FIRST"
+ 1151  git status
+ 1152  vi hello.html
+ 1153  git commit -am "changed to SECOND"
+ 1154  git status
+ 1155  git log --oneline 
+ 1156  git reset HEAD^^
+ 1157  git status
+ 1158  git commit -am "merged two commits to one FIRST & SECONDE"
+ 1159  clear
+ 1160  git status 
+ 1161  git log --oneline -4 
+ 1162  git log --oneline 
+ 1163  git branch -a 
+ 1164  git reset --hard main
+ 1165  git log --oneline 
+ 1166  git status
+ 1167  git checkout -b a756423
+ 1168  git branch -a 
+ 1169  git checkout a756423
+ 1170  cat hello.html
+ 1171  git checkout dev1
+ 1172  cat hello.html
+ 1173  git checkout a756423
+ 1174  git branch 
+ 1175  cat hello.html
+ 1176  git checkout dev1
+ 1177  git status
+ 1178  vi hello.html
+ 1179  git commit -am "update FIRST PARA"
+ 1180  git status 
+ 1181  git log --oneline
+ 1182  git reset --hard main
+ 1183  git log --oneline
+ 1184  git checkout 04bc6d6
+ 1185  git branch -a
+ 1186  git switch 04bc6d6
+ 1187  git status
+ 1188  git switch -c new_branch2
+ 1189  git branch -a 
+ 1190  cat hello.html
+ 1191  clear
+ 1192  git branch -a 
+ 1193  git checkout main 
+ 1194  git log --oneline --graph --all --decorate
+ 1195  git branch 
+ 1196  git checkout dev1
+ 1197  vi hello.html
+ 1198  git commit -am "added span"
+ 1199  git log --oneline --graph --all --decorate
+ 1200  git branch 
+ 1201  git status 
+ 1202  cat hello.html
+ 1203  vi hello.html
+ 1204  git commit -am "updated heading"
+ 1205  git log --oneline --graph --all --decorate
+ 1206  git checkout new_branch2
+ 1207  cat hello.html
+ 1208  git checkout dev1
+ 1209  git merge new_branch2
+ 1210  vi hello.html
+ 1211  git status
+ 1212  git commit -m "after resolving conflicts"
+ 1213  git add . 
+ 1214  git commit -m "added after resolve"
+ 1215  git status
+ 1216  git branch 
+ 1217  git log --oneline --graph --all --decorate
+ 1218  history 50
+ 1219  history | less 50
+ 1220  history | less -50
+ 1221  clear
+ 1222  git branch 
+ 1223  git log --oneline
+ 1224  cat hello.html
+ 1225  git stash list
+ 1226  git stash save "stash 1"
+ 1227  clear
+ 1228  git status 
+ 1229  vi hello.html
+ 1230  git status 
+ 1231  git stash save "h2 content"
+ 1232  git stash list 
+ 1233  cat hello.html
+ 1234  vi hello.html
+ 1235  git stash list 
+ 1236  git stash save "title\n"
+ 1237  git stash list
+ 1238  cat hello.html
+ 1239  vi hello.html
+ 1240  git stash save "div added"
+ 1241  git stash list 
+ 1242  git stash show stash@{0}
+ 1243  git stash show -p stash@{0}
+ 1244  git stash show -p stash@{1}
+ 1245  git stash show -p stash@{2}
+ 1246  git stash list 
+ 1247  cat helo
+ 1248  cat hello.html
+ 1249  git stash pop
+ 1250  cat hello.html
+ 1251  git stash list 
+ 1252  git stash apply stash@{1}
+ 1253  cat hello.html
+ 1254  git stash list 
+ 1255  git commit -am "applied div"
+ 1256  git stash apply stash@{1}
+ 1257  cat hello.html
+ 1258  vi hello.html
+ 1259  git commit -am "updated stashed h2"
+ 1260  git status
+ 1261  git stash list 
+ 1262  git stash drop stash@{0}
+ 1263  git stash list 
+ 1264  clear
+ 1265  cd
+ 1266  pwd
+ 1267  ls -la
+ 1268  ls -la | grep git
+ 1269  clear
+ 1270  ls -la | grep jenkins
+ 1271  cd .jenkins
+ 1272  ls
+ 1273  cd workspace
+ 1274  ls
+ 1275  rm -rf * 
+ 1276  clear
+ 1277  pwd
+ 1278  ls
+ 1279  clear
+ 1280  which java
+ 1281  cd /Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/Home/
+ 1282  pwd
+ 1283  pwd
+ 1284  cd /Volumes/Kanchan/MyTrainings/sapient/freshers-2021-jun-asde
+ 1285  git add . g
+ 1286  git add . 
+ 1287  git commit -m "added day 1 files"
+ 1288  git push origin main 
+ 1289  clear
+ 1290  pwd
+ 1291  pwd
+ 1292  s
+ 1293  ls
+ 1294  mkdir java-cli-works
+ 1295  cd java-cli-works
+ 1296  mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false\n
+ 1297  clear
+ 1298  pwd
+ 1299  ls
+ 1300  tree 
+ 1301  clear
+ 1302  mvn clean install
+ 1303  mvn clean package 
+ 1304  pwd
+ 1305  clear
+ 1306  ls
+ 1307  cd my-app
+ 1308  pwd
+ 1309  mvn clean install 
+ 1310  clear
+ 1311  ls
+ 1312  ls target
+ 1313  java -jar target/my-app-1.0-SNAPSHOT.jar
+ 1314  java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+ 1315  pwd
+ 1316  ls
+ 1317  vi src/main/java/com/mycompany/app/App.java
+ 1318  pwd
+ 1319  pwd
+ 1320  cd ..
+ 1321  ls
+ 1322  cd ..
+ 1323  ls
+ 1324  clear
+ 1325  pwd
+ 1326  git branch -a 
+ 1327  git branch jenkins-works
+ 1328  git status
+ 1329  git add . 
+ 1330  git commit -m "added intirm files"
+ 1331  git push origin main 
+ 1332  clear
+ 1333  git branch -a 
+ 1334  git checkout jenkins-works
+ 1335  git branch 
+ 1336  ls
+ 1337  pwd
+ 1338  git branch 
+ 1339  pwd
+ 1340  mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false\n
+ 1341  git add . 
+ 1342  git commit -m "create jenkins-works branch and created mvn project"
+ 1343  git push origin jenkins-works
+ 1344  clear
+ 1345  git add . 
+ 1346  git commit -m "chaned folder structure"
+ 1347  git push origin jenkins-works
+ 1348  touch Jenkinsfile
+ 1349  ls
+ 1350  vi Jenkinsfile
+ 1351  git status
+ 1352  git add . 
+ 1353  git commit -m "added jenkins file"
+ 1354  git push origin jenkins-works
+ 1355  clear
+ 1356  ls
+ 1357  vi Jenkinsfile
+ 1358  git add . 
+ 1359  git commit -m "added parameter"
+ 1360  git push origin jenkins-works
+ 1361  vi Jenkinsfile
+ 1362  vi Jenkinsfile
+ 1363  git add . 
+ 1364  git commit -m "updated jenkins file" 
+ 1365  git push origin jenkins-works
+ 1366  vi Jenkinsfile
+ 1367  git add . 
+ 1368  git commit -m "added env variables:\n"
+ 1369  git push origin jenkins-works
+ 1370  clear
+ 1371  pwd
+ 1372  git branch 
+ 1373  git checkout main 
+ 1374  ls
+ 1375  ls
+ 1376  code . 
+ 1377  history 

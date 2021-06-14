@@ -87,16 +87,16 @@ Work Method
 
 List Of Softwares : 
 
-Git Bash : https://git-scm.com/downloads
-Java 8 : https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html
-Jenkins : https://www.jenkins.io/download/
-Docker : https://docs.docker.com/docker-for-windows/install/
+* Git Bash : https://git-scm.com/downloads
+* Java 8 : https://www.oracle.com/in/java/technologies/javase/javase-jdk8-downloads.html
+* Jenkins : https://www.jenkins.io/download/
+* Docker : https://docs.docker.com/docker-for-windows/install/
     
     > docker run hello-world 
 
-Eclipse : https://www.eclipse.org/downloads/
-VS Code : https://code.visualstudio.com/download
-NodeJS : https://nodejs.org/en/
+* Eclipse : https://www.eclipse.org/downloads/
+* VS Code : https://code.visualstudio.com/download
+* NodeJS : https://nodejs.org/en/
 
 
 
