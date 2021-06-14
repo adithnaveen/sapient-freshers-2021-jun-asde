@@ -104,12 +104,19 @@ Either go with "master", "main"
 
 ### Git Commands 
 > git init 
+
 > git branch <branchName> -- create a branch 
+
 > git checkout <branchName> - checkout / switch branch 
+
 > git branch --merged  - to show if the current branch is merged from other branch 
+
 > git branch --no-merged - to show if the current branch is not merged from other branch 
+
 > git checkout main 
+
 > git merge new_branch 
+
 >  git checkout -b dev1  (create and switch the branch)
 
 ### Git Reset 
@@ -147,12 +154,24 @@ In Git we have 4 area
 
 > git shash show -p  stash@{<NUMBER>} - to show the actual code 
 
+> git fetch + git merge = git pull 
+
+to delete the branch on remote 
+> git push origin --delete branch_name
+
+> git push origin :branch_name
+
+
+
+### Branching Stratergy 
+
+<img src="./images/branching-stratergy.drawio" alt="work image">
 
 
 
 
+# Jenkins 
 
-
-
-
+1. Freestyle project 
+2. Pipe line project * 
 
