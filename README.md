@@ -80,7 +80,7 @@ DOR - Defination of Release
 DOD - Defination of Done 
 
 
-Work Method 
+## _Working Method_
 
 <img src="./images/work-method.png" alt="work image">
 
@@ -165,7 +165,7 @@ to delete the branch on remote
 
 ### Branching Stratergy 
 
-<img src="./images/branching-stratergy.png" alt="branching stratergy">
+<img src="./images/branching-stratergy.png" alt="branching stratergy" width="350" height="200">
 
 
 
