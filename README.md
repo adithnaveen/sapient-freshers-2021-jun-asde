@@ -117,7 +117,7 @@ Either go with "master", "main"
 
 > git merge new_branch 
 
->  git checkout -b dev1  (create and switch the branch)
+> git checkout -b dev1  (create and switch the branch)
 
 ### Git Reset 
 * soft reset - will keep the file in stagin area but not commit 
@@ -173,5 +173,72 @@ to delete the branch on remote
 # Jenkins 
 
 1. Freestyle project 
+   1. scripted fashion (.sh / .bat)
 2. Pipe line project * 
+   1. you can have groovy code  in Jenkins 
+   2. You can have groovy code in "Jenkinsfile" on remote SCM 
 
+```
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+        
+    }
+}
+
+```
+
+
+```
+    pipeline {
+    agent any
+
+    tools {
+        // Install the Maven version configured as "M3" and add it to the path.
+        maven "M3"
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                // Get some code from a GitHub repository
+                git 'https://github.com/jglick/simple-maven-project-with-tests.git'
+
+                // Run Maven on a Unix agent.
+                sh "mvn -Dmaven.test.failure.ignore=true clean package"
+
+                // To run Maven on a Windows agent, use
+                // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+            }
+
+            post {
+                // If Maven was able to run the tests, even if some of the test
+                // failed, record the test results and archive the jar file.
+                success {
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
+            }
+        }
+    }
+}
+
+```
+
+
+
+
+
+
+### Create Maven Project 
+
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+
+to show if 1 stage fails other will not execute 
