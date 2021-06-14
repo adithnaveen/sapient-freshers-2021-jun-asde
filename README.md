@@ -132,12 +132,19 @@ In Git we have 4 area
 
 ### working with stash
 > git stash save "message"
+
 > git stash list 
+
 > git stash pop - it applied and removes
+
 > git stash apply stash@{<NUMBER>} - applies and doesnot remove 
+
 > git stash drop stash@{<NUMBER>} - to remove the stash 
+
 > git stash clear - to clear all the stash 
+
 > git stash show stash@{<NUMBER>} - to show the stash 
+
 > git shash show -p  stash@{<NUMBER>} - to show the actual code 
 
 
