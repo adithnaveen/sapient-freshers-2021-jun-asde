@@ -238,6 +238,7 @@ pipeline {
 > mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
 
+****
 
 
 
@@ -287,7 +288,7 @@ Docker allows tha orchestration with
 * Kubernetees 
   
 *** 
-## Docker Commands 
+## Docker Introduction Commands 
 
 > docker info 
 
@@ -339,11 +340,12 @@ to get into the mongo instance
 To deploy a java application 
 
 Steps 
-1. docker pull openjdk 
-2. mvn clean install 
-3. copy jar file to docker container 
-4. java -cp target/app-snapshot.jar com.mycompany.app.App
-
+```
+    1. docker pull openjdk 
+    2. mvn clean install 
+    3. copy jar file to docker container 
+    4. java -cp target/app-snapshot.jar com.mycompany.app.App
+```
 
 _**Docker can build images automatically by reading the instructions from a Dockerfile**_
 
