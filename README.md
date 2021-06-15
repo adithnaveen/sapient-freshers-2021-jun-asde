@@ -233,13 +233,132 @@ pipeline {
 ```
 
 
-
-
-
-
 ### Create Maven Project 
 
-mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+> mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
 
-to show if 1 stage fails other will not execute 
+
+
+
+# DAY 2 
+
+Run with PR from Master -> Dev -> branches 
+<img src="./images/branching-assignment.drawio.png" alt="branching straergy in sapient">
+
+1. Maven 
+
+Maven has 3 Stages 
+* clean (clean)
+* work (various stages like compile, deploy, install, provided etc)
+* report (site) - this will help you to generate the report 
+
+
+> mvn compile
+
+> mvn clean compile
+
+> mvn package
+
+> mvn clean package
+
+> mvn test
+
+> mvn clean test
+
+> mvn site – to generate documentation
+
+> mvn clean
+
+> mvn eclipse:eclipse – compatible to eclipse
+
+*** 
+simple to program to show usage of slf4j 
+
+
+1. Docker
+
+> Tightly Couples Loosely Cohisive -> Highly Cohisive Loosely Coupled systems 
+
+Docker allows tha orchestration with 
+* Docker Swarm 
+* Rancher 
+* ECS 
+* Kubernetees 
+  
+*** 
+## Docker Commands 
+
+> docker info 
+
+> docker images - will get all the images which are in current system 
+
+> docker pull image-name - will search for the image in hub.docker.com 
+
+> docker ps - active containers which are running 
+
+> docker ps -a [ - active containers which are running  + which are stopped]
+
+> docker rm container-id [to remove the container which is stopped]
+
+> docker rmi imageif [ to remove the images]
+
+> docker system prune [ to remove images which are not in use ]
+
+> docker stop container-id [to stop the container which is running ]
+
+> docker start container-id [to start the container ]
+Note: you cannot delete running container to do so first stop / force delete 
+
+> docker pull mongo 
+
+> docker run -name sapient-mongodb1 -d mongo 
+
+to get into the mongo instance 
+
+> docker exec -it [ containerid/name ] sh 
+
+
+### _Hosting Jenkins With Docker_
+
+> docker pull jenkins 
+
+> docker run --name sapient-jenkins-instance -d -p 8080:8080 -p  50000:50000  jenkins:2.7.4
+
+> docker logs [ container-id ] - to get the logs of the running container 
+
+> docker inspect [container -id ] - to get the details of the container 
+
+> docker history i-hello-world-3
+
+To deploy a java application 
+
+Steps 
+1. docker pull openjdk 
+2. mvn clean install 
+3. copy jar file to docker container 
+4. java -cp target/app-snapshot.jar com.mycompany.app.App
+
+
+_**Docker can build images automatically by reading the instructions from a Dockerfile**_
+
+to build image 
+> docker image build -t i-hello-world-4 .
+
+
+to run 
+>  docker run i-hello-world-5:latest
+
+
+
+
+
+
+
+Team 1 - Prateek, rajshekar, akshit, harshit 
+Team 2 - Deepanjan, kanav, rizwan, praduman 
+Team 3 - karmanya, priyadarshan, aarsh verdhan, akhil 
+Team 4 - krishna, aneesha, bitan, sailaja 
+Team 5 - rohit, laksay, shushut, siddharth 
+Team 6 - sanjana, suhas, hemanth, veena 
+
