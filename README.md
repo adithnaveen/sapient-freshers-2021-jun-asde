@@ -318,6 +318,10 @@ to get into the mongo instance
 
 > docker exec -it [ containerid/name ] sh 
 
+**to push image to hub.docker.com**
+
+> Syntax: docker push username/imageid:tag
+> Example: docker push adithnaveen/java-image:1
 
 ### _Hosting Jenkins With Docker_
 
@@ -330,6 +334,7 @@ to get into the mongo instance
 > docker inspect [container -id ] - to get the details of the container 
 
 > docker history i-hello-world-3
+
 
 To deploy a java application 
 
@@ -350,15 +355,28 @@ to run
 >  docker run i-hello-world-5:latest
 
 
+Assignment Image 
+
+To build a pipe line for using jenkins / docker 
+<img src="./images/jenkins-docker.drawio.png">
+
+
+*** 
+<img src="./images/mono-micro.drawio.png" width="300" alt="micro & monolithic discussion">
+
+
+> Team 1 - Prateek, rajshekar, akshit, harshit
+
+> Team 2 - Deepanjan, kanav, rizwan, praduman 
+
+> Team 3 - karmanya, priyadarshan, aarsh verdhan, akhil 
+
+> Team 4 - krishna, aneesha, bitan, sailaja 
+
+> Team 5 - rohit, laksay, shushut, siddharth 
+
+> Team 6 - sanjana, suhas, hemanth, veena 
 
 
 
-
-
-Team 1 - Prateek, rajshekar, akshit, harshit 
-Team 2 - Deepanjan, kanav, rizwan, praduman 
-Team 3 - karmanya, priyadarshan, aarsh verdhan, akhil 
-Team 4 - krishna, aneesha, bitan, sailaja 
-Team 5 - rohit, laksay, shushut, siddharth 
-Team 6 - sanjana, suhas, hemanth, veena 
 
