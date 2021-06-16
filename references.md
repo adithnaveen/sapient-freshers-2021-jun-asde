@@ -10,3 +10,9 @@ Docker Inside Docker
 
 > https://www.docker.com/blog/docker-can-now-run-within-docker/
 
+ sonar lint plugin eclipse 
+> https://marketplace.eclipse.org/content/sonarlint
+
+OS text book 
+
+> http://www.cs.put.poznan.pl/akobusinska/downloads/Operating_Systems_Concepts.pdf

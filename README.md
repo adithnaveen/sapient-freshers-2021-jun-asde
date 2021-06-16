@@ -363,6 +363,22 @@ To build a pipe line for using jenkins / docker
 <img src="./images/jenkins-docker.drawio.png">
 
 
+## Docker Volumes 
+
+> docker volume ls 
+
+> docker volume create vol-name
+
+> docker volume inspect vol-name 
+
+start jenkins instance attached to volume(default)
+
+> docker run --name jenkins-container-1 -v [ vol-name ]:/var/jenkins_home -p 8080:8080 jenkins:2.7.4 
+
+start jenkins instance attached to volume - bind a folder 
+
+> docker run --name jenkins-container-1 -v /users/naveenkumar/Desktop/folder-name:/var/jenkins_home -p 9000:8080 jenkins:2.7.4 
+
 *** 
 <img src="./images/mono-micro.drawio.png" width="300" alt="micro & monolithic discussion">
 
@@ -382,3 +398,301 @@ To build a pipe line for using jenkins / docker
 
 
 
+
+****
+
+# DAY 3 
+
+****
+
+* Docker Volumes 
+* install sonar lint + object aid 
+* understand java program 
+
+```
+    int main() {} - you have control 
+    void main() {} - 0 
+```
+
+
+_HelloWorld.java_
+```
+package com.naveen; 
+
+    public class HelloWorld {
+        static void hi()  {}
+        void bye()  {}
+        int x=100; - heap  
+        static int yy=100;
+        boolean flag = true; 
+        public static void main(String [] args) {
+            int y; 
+            HelloWorld h = new HelloWorld();
+            h.bye();
+            hi();
+            System.out.println(h.x);
+            System.out.println("hi);
+        }
+    }
+
+
+
+```
+> javac -d . HelloWorld.java  - syntax and semantic .class - compiler / JITC
+> java com.naveen.HelloWorld hi[0] bye[1] cya[2] - interpreter 
+
+
+### Diagram 
+<img src="./images/java-hello-world-arch1.drawio.png" width="300">
+
+
+_stack calls_
+
+```
+version 1 
+int main(){
+    hi();
+}
+
+hi(){
+    bye()
+}
+bye() {
+    cya()
+}
+cya(){}    
+
+```
+
+
+```
+version 1 
+int main(){
+    hi();
+}
+
+hi(){
+    ....
+}
+```
+
+
+String can hold - "10" , "true", .png 
+.exe - mac / lin (does not work)
+.so / a.out - win / max (does not work)
+.dmg - win / lin 
+
+> access specifiers 
+1. public 
+2. private 
+3. protected 
+4. default(package)
+
+
+
+***
+Folder Structure 
+Training (Repo)
+    aneesha-llid
+        w1-d1-git-jenkins
+        w1-d2-maven-docker
+        w1-d3-java
+        w1-d4-java-dp
+
+    bitan-llid
+    Participant 3
+    ..
+    Participant n
+***
+
+
+- Differnt UML diagrams (26) types of diagram 
+  - class diagram 
+  - use case diagram 
+  - activity diagram 
+  - sequence 
+  - profile diagram 
+  - flow chart 
+  - data flow diagram 
+  - component diagram 
+  - objecet diagram 
+  - state diagram 
+  - context diagram 
+
+* HLD - High Level Diagram 
+  * use case diagram 
+  * flow chart 
+  * component diagram
+  * context diagram 
+
+
+* LLD - Low Level Diagram 
+  * class diagram 
+  * use case diagram 
+  * flow chart 
+
+
+plantuml (explore)
+abstract class  "abstract class"
+annotation      annotation
+circle          circle
+()              circle_short_form
+class           class
+diamond         diamond
+<>              diamond_short_form
+entity          entity
+enum            enum
+interface       interface
+
+
+OOPS - anti pattern  
+* compositon - has-a
+  
+  ```
+    class Employee {
+        private int empId; 
+        private Name name;
+        private double salary; 
+
+    // getters / setters 
+    }
+
+    class Customer {
+        private Name name; 
+        private int custId;
+        private double income; 
+    }
+    class Trainer {
+        private int tId; 
+        private Name name; 
+        private double level;
+
+    }
+
+    class Name {
+        private String firstName; 
+        private String middleName; 
+        private String lastName; 
+    }
+
+
+  ```
+
+
+
+* aggregation 
+* association -is-a (generalization - speciliazation)
+  ```
+    class Vehicle {} - generic class 
+    class Car extends Vehicle {}  generic class  - specific class 
+    class Maruti extends Car {} - specific class 
+  ```
+
+
+
+
+
+* S - Single-responsibility principle
+* O - open close - should be open for extension, but closed for modification
+* L - Functions that use pointers or references to base classes must
+             be able to use objects of derived classes without knowing it
+
+```
+    
+    interface Vehilcle {
+        public void move();
+    }
+    class Car extends Vehicle {
+        public void driveStreering() {}
+         public void move(){} 
+    }
+    class TwoWheeler extends Vehilce {
+        public void handle(){}
+         public void move(){} 
+    }
+
+    class VehilcleBL {
+      
+
+        public static void show(Vehicle v) {
+            v.move();
+            if(v instanceof Car) {
+                v.driveSteering();
+            }else if(v instanceof TwoWheeler) {
+                v.handle()
+            }
+        }
+
+    }
+
+    class App {
+        public static void main(String [] args) {
+            Vehicle v; 
+            v = getMe("car");
+            VehicleBL.show(v);        
+
+            v = new getMe("twoWheeler");
+           VehicleBL.show(v); 
+        }
+    }
+
+```
+
+
+in C 
+```
+    int main() {
+        int *p; 
+        p  = (int *) malloc(100); 
+        ... your business logic 
+
+        free(p); 
+    }
+```
+
+* I -  Interface segregation principle: 
+    "Many client-specific interfaces are better than one general-purpose interface" 
+* D - Dependency Injection (DI)/ IOC 
+
+
+*** 
+* KISS 
+* DRY 
+* YAGNI 
+
+
+
+
+### Vehicle management system 
+Below are the asks 
+
+* The company (XYZ) who manufacures chasis / nuts/ enginee etc 
+* they have a problem to integrate various cars which they are catering 
+* the want a unifed system where can build "nut/bolt" for differnet cars / two / trucks 
+*  the code is exposed to the client but they have comeback saying its complicated to 
+  understand what is available 
+  Ex:  class Vehicle {} 
+  class Car extends Vehicle{}
+  class Maruti extends Car {}
+  
+    class Breeza extends Maruti {}
+    class Swift extends Maruti{}
+  
+  class BMW extends Car {}
+    class X1 extends BMW {}
+    class X2 extends BMW {}
+
+  class Volve extends Car{}
+    class VSixty extends Volvo {}
+
+X1 x1  = new X1(); 
+x1.showNutBolt() (wrong)
+
+* they want a common interface where they can see size / dimention / weight of nut/ bolts 
+* they would like to have the data kept in matrix format 
+  * maruti -> Breeza / Swift ...
+  * BMW -> X1, X2...
+  * Volvo - VSixty, CSixty ...
+
+
+write 1 method which should show all the cars (nuts/bolts)
