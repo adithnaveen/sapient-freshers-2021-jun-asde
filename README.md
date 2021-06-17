@@ -443,7 +443,7 @@ package com.naveen;
 
 
 ### Diagram 
-<img src="./images/java-hello-world-arch1.drawio.png" width="300">
+<img src="./images/java-hello-world-arch1.drawio.png" width="450">
 
 
 _stack calls_
@@ -696,3 +696,80 @@ x1.showNutBolt() (wrong)
 
 
 write 1 method which should show all the cars (nuts/bolts)
+
+
+
+****
+# DAY 4 
+
+Convention 
+> package - has to be in lower case & cannot be in default package 
+    * com.company.something 
+    * org.company.something 
+
+> variable / methods - camelcase - start with lower case then every words first char is in upper chse 
+
+  * empId, empName, debitSalary, creditSalary, getEmployeeSalaryFromDB() 
+  
+> class name - pascal casing 
+  * start with upper case then every next work first char in upper case 
+    Employee, EmployeeProcessor, EmployeeDAO, IEmployeeDAO 
+> constants 
+    * to be in upper case 
+    * COMPANY_NAME, TAX 
+
+
+class - contracting Abastract Class (only abstract, you can have concrete methods) 
+    / Interface (100%, concrete methods but has to be default prefixed) 
+
+
+Noun - Entity / Bean 
+Employee - DB 
+
+EmployeeDAO 
+
+
+> access-specifer access-modifier returntype methodname(param)
+
+>access-specifer  - public, private, protected, default 
+> access-modifier - static, final, sychronized, abstract 
+> void or type (int, flotat, Employee, Vehicle) 
+
+
+
+
+
+
+****
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

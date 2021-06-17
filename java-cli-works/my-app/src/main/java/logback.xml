@@ -9,7 +9,7 @@
         </layout>
     </appender>
 
-    <logger name="com.mycompany.app" level="all" additivity="false">
+    <logger name="com.sapient.vehiclemanagement" level="all" additivity="false">
         <appender-ref ref="CONSOLE"/>
     </logger>
 
