@@ -693,6 +693,29 @@ x1.showNutBolt() (wrong)
   * maruti -> Breeza / Swift ...
   * BMW -> X1, X2...
   * Volvo - VSixty, CSixty ...
+```
+> way 1
+class Brands {
+    private String branchName; 
+    private List< Car > cars; 
+}
+
+
+List<Brands> brandedCars = new List<Brands>(); 
+Brands marutiBrands = new Brands(); 
+marutiBrands.setBrandName("Maruti"); 
+marutiBrands.setCars()
+brandedCars.add(List.of(new Car("Breeza", 4), new Car("Swift", 5)); 
+
+> way 2 
+
+HashMap<String, List<Car>> brandedCars = new HashMap<>(); 
+brandedCars.put("maruti", List.of(new Breeza(), new Swift())
+brandedCars.put("maruti", List.of(new Car("Breeza", 4), new Car("Swift", 5)); 
+
+```
+
+
 
 
 write 1 method which should show all the cars (nuts/bolts)
@@ -737,7 +760,67 @@ EmployeeDAO
 
 
 
+```
+    class Company {}
+    @Data 
+    class Employee {
+        private Company company; 
+        private int empId; 
+        private String name;
 
+        public void setCompany(Company company) {
+            this.company = company; 
+        }
+    }
+
+// BLR 
+    Company company = Company.getInstance();
+
+    Employee e = new Employee(); 
+    e.setCompany(company); 
+    e.blah() 
+
+// CHN
+ Company company = Company.getInstance();
+
+    Employee e = new Employee(); 
+    e.setCompany(company); 
+    e.blah() 
+
+
+    Vehicle
+        Car 
+            BMW 
+                X1
+                X2
+                X3
+                X4
+                ..
+            Maruti  
+                Swift 
+                Kizashi
+                Scross.. 
+        TwoWheeler 
+    Color 
+        BLUE
+        GREEN
+        BLACK
+        WHITE
+
+```
+
+
+chain of rsponsitibliy 
+
+```
+    fetch(url)
+        .then()
+        .then()
+        .then()
+        .catch()
+```
+
+Class.forName("com.mysql.jdbc.Driver"); 
 
 
 ****

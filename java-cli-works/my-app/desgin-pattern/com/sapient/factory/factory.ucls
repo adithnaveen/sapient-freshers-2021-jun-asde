@@ -1,84 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
   associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
-  <class id="1" language="java" name="com.sapient.vehiclemanagement.Vehicle" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/Vehicle.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="196" y="125"/>    
+  <class id="1" language="java" name="com.sapient.factory.Hyundai" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/Hyundai.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="97" x="344" y="299"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="2" language="java" name="com.sapient.vehiclemanagement.Car" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/Car.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="137" width="190" x="8" y="305"/>    
+  <class id="2" language="java" name="com.sapient.factory.Maruti" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/Maruti.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="97" x="481" y="299"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="3" language="java" name="com.sapient.vehiclemanagement.TwoWheeler" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/TwoWheeler.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="119" width="157" x="238" y="305"/>    
+  <class id="3" language="java" name="com.sapient.factory.App" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/App.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="276" y="142"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="4" language="java" name="com.sapient.vehiclemanagement.VehilceBL" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/VehilceBL.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="572" y="505"/>    
+  <class id="4" language="java" name="com.sapient.factory.BMW" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/BMW.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="83" width="97" x="618" y="299"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="5" language="java" name="com.sapient.vehiclemanagement.IParts" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/IParts.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="473" y="138"/>    
+  <enumeration id="5" language="java" name="com.sapient.factory.CarNames" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/CarNames.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="224" y="381"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
-  </interface>  
-  <class id="6" language="java" name="com.sapient.vehiclemanagement.App" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/App.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="561" y="332"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </class>  
-  <class id="7" language="java" name="com.sapient.vehiclemanagement.BMW" project="my-app" 
-    file="/my-app/src/main/java/com/sapient/vehiclemanagement/BMW.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="101" width="163" x="216" y="563"/>    
+  </enumeration>  
+  <class id="6" language="java" name="com.sapient.factory.Car" project="my-app" 
+    file="/my-app/desgin-pattern/com/sapient/factory/Car.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="538" y="171"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="8">    
+  <generalization id="7">    
     <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="5"/>  
-  </realization>  
-  <generalization id="9">    
+    <end type="TARGET" refId="6"/>  
+  </generalization>  
+  <generalization id="8">    
     <end type="SOURCE" refId="2"/>    
-    <end type="TARGET" refId="1"/>  
+    <end type="TARGET" refId="6"/>  
   </generalization>  
-  <generalization id="10">    
-    <end type="SOURCE" refId="3"/>    
-    <end type="TARGET" refId="1"/>  
-  </generalization>  
-  <generalization id="11">    
-    <end type="SOURCE" refId="7"/>    
-    <end type="TARGET" refId="2"/>  
+  <generalization id="9">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
   </generalization>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
