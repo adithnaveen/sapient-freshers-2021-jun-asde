@@ -11,5 +11,11 @@ public class App {
 		IVehicle manTruck = abstractFactory.getVehicle("truck"); 
 		manTruck.move(); 
 		manTruck.speed(70);
+		
+		abstractFactory = FactoryProducer.getFactory("color");
+		
+		IColor redColor = abstractFactory.getColor("red"); 
+		redColor.paint(); 
+		
 	}
 }
