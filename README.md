@@ -822,8 +822,45 @@ chain of rsponsitibliy
 
 Class.forName("com.mysql.jdbc.Driver"); 
 
+Project Work : StackTooFlow 
+
+24 / 6 = 4 
+User Stories: 
+
+1. The application should have option to login to system 
+2. the application should allow to register 
+3. The application shoul allow to reset the passwor if user forgets 
+4. The application should allow to ask a question 
+5. There should be UP / DOWN down vote the question 
+6. UP/DOWN on comment for the question 
+7. the Application should allow to have comments for the question 
+8. The application shall allow suggest similar problem 
+9. Should allow answer the question 
+10. Option to Delete / Edit option only for owner of questionn 
+11. Option to Delete / Edit option only for owner of commenter 
+12. List Trending questions 
+13. show user dashboard which contains 
+    1.  his/ her question 
+    2.  his/her comments 
+    3.  View his/her grade / points - rating 
+    4.  System should store user profile like name,email, gender, social links etc 
+14. application shall allow to search a question / answer - without login 
+15. application shall allow to search on user 
+16. view other people profile 
+17. sort the answer based on relevence 
+18. assign tag for the question 
+19. user shall have the notification 
+20. User can close the question 
+21. spam a question / use could report the comment 
+22. spam a user 
+23. owner of the question can mark the answer by other user is best answer 
+24. One use should be able to follow other users 
+
+
 
 ****
+
+
 
 
 
