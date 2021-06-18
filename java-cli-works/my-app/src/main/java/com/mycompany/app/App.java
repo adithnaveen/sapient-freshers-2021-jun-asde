@@ -18,5 +18,10 @@ public class App {
 		String myvar = "Hello Var"; 
 		log.warn("in warn {}",myvar);
 		log.trace("in trace");
+		
+		SimpleBean s = new SimpleBean(); 
+		s.setId(101);
+		s.setName("kumar");
+		System.out.println(s);
 	}
 }

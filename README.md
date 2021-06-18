@@ -886,6 +886,10 @@ TEST - 500ms (370XX)ms    -.--
 
 ### BDD 
 ```
+
+<img src="./images/tdd-bdd.drawio.png" width="350">
+
+
 Given - Pre Condition 
 When - Actual Work 
 Then - Post Condition 
@@ -917,6 +921,24 @@ Cucumber
     Gherkin (Small Cucumber) - Ruby (on top of Java)
 
 Ruby / Kotlin / Scala / Groovy / R - written on top of Java 
+
+
+types of tests 
+* Sanity - check everything once 
+* Stress - increment the count for the BL 
+* Functional Test - Dont test everything but specifed 
+* Spike Test - Give Too much load to the system 
+
+
+Plugin Called Lombok - 
+getters and setters 
+parametric / default contstructors 
+toString 
+
+@Data 
+@Getters
+@Setters 
+@ToString 
 
 
 
