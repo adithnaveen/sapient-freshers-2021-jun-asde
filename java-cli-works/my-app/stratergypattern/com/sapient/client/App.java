@@ -4,9 +4,6 @@ import com.sapient.contracts.IShoppingCart;
 import com.sapient.entity.Item;
 import com.sapient.shoppingcart.ShoppingCart;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 public class App {
 	public static void main(String[] args) {
 		IShoppingCart cart = new ShoppingCart(); 

@@ -405,6 +405,8 @@ start jenkins instance attached to volume - bind a folder
 
 ****
 
+- WORM (Write Once Read Many)
+
 * Docker Volumes 
 * install sonar lint + object aid 
 * understand java program 
@@ -855,11 +857,70 @@ User Stories:
 23. owner of the question can mark the answer by other user is best answer 
 24. One use should be able to follow other users 
 
+****
+
+# DAY 5 
+
+> TDD/BDD/DDD/ATD 
+
+* TDD - Test Driven Development 
+* BDD - Behaviour Driven Developement 
+* DDD - Domain Driven Development 
+* ADTD - Acceptance Driven testing / Development 
+
+Next 5 Years - LowCode / NoCode 
+
+> TDD (FOSS - Free & Open Source)
+* jUnit 4 
+* jUnit 5 - Jupiter - 
+
+
+
+BL - 500 ms               -----
+TEST - 500ms (370XX)ms    -.--
+
+
+
+
+
+
+### BDD 
+```
+Given - Pre Condition 
+When - Actual Work 
+Then - Post Condition 
+
+And - Multiple 
+But - Clause 
+
+**To run We will user JUNI**
+
+Featue - registration module 
+
+Scenario: 
+    Given the application is loaded
+    When the user clicks on "Registration Button" 
+    And Enter valid pattern email address 
+    And Proper pattern Password 
+    Then show a message called "User Registered Successfully"   
+
+```
+
+Sprint Ceremony - User Strories 
+Sprint Groomming - Stake Holder / Product Owner will come and talk to developer 
+    and explain the feature file 
+    give a closure 
+Sprint Retrospective 
+
+
+Cucumber 
+    Gherkin (Small Cucumber) - Ruby (on top of Java)
+
+Ruby / Kotlin / Scala / Groovy / R - written on top of Java 
+
 
 
 ****
-
-
 
 
 
