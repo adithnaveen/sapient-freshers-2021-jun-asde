@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import ch.qos.logback.classic.Level;
 //import org.slf4j.Logger;
 import ch.qos.logback.classic.Logger;
+import lombok.extern.slf4j.Slf4j;
 
 public class App {
 	private static final Logger log = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(App.class);

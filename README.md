@@ -824,7 +824,6 @@ Class.forName("com.mysql.jdbc.Driver");
 
 Project Work : StackTooFlow 
 
-24 / 6 = 4 
 User Stories: 
 
 1. The application should have option to login to system 

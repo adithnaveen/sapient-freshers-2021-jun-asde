@@ -20,5 +20,7 @@ OS text book
 Java 8 Programs 
 > https://github.com/adithnaveen/aribajava8/tree/master/src/com/ariba
 
-
+Design Patterns 
+> https://refactoring.guru/design-patterns
+> 
 
