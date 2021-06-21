@@ -1086,6 +1086,28 @@ select e.empid, d.deptname from emp e , dept d, project p , location l
 > \dt - to list the tables 
 > \d < tablename > - to desc table 
 
+
+### to install lombok 
+> https://projectlombok.org/download - download the jar 
+>  java -jar lombok-1.18.20.jar
+
+> in pom.xml 
+```
+    <dependency>
+        <groupId>org.projectlombok</groupId>
+        <artifactId>lombok</artifactId>
+        <version>1.18.20</version>
+	</dependency>
+```
+
+
+@Data -> Generates getters for all fields, a useful toString method, and hashCode and equals implementations that check all non-transient fields. Will also generate setters for all non-final fields, as well as a constructor.
+Equivalent to @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode.
+
+
+### working with JPA 
+- JPA is a standarad , implentor is Hibernate (it could be other people also like ibatis, toplik etc )
+
 *** 
 
 
