@@ -940,11 +940,153 @@ toString
 @Setters 
 @ToString 
 
+TDD in a BDD way
 
 
+```
+Scenario:  Title 
+
+Given  the site is loaded 
+When username is "" 
+And password is peter
+Then take him to home page 
+
+And 
+But 
+
+-- the step is created 
+@Given("^the site is loaded$)
+public void the_site_is_loaded() {
+    business logic 
+}
+
+@When("^username is \"([a-zA-Z0-9]{1,})\"")
+public void username_is_passed(String userName) {
+    String expected="harry";     
+    assertEquals(expected, userName)
+    
+    assertNotNull(userName); 
+
+    // statement will not execute 
+    <!-- selenium  -->
+}
+
+
+```
 ****
 
+# DAY 6 
 
+Data model
+Types: Conceptual/logical/physical
+ER modeling - Entity/Attribute/Relationship
+ER diagrams/normalization
+RDBMS using MySQL/Postgres
+DDL/DML/Queries
+Basic examples of JDBC (connect/insert/select)
+Problems with JDBC and why we need ORM
+What is JPA?
+Setting up environment
+Entity classes
+Configuration
+CRUD operations
+Queries
+
+
+## 3 Schema arch 
+
+SQL - ACID 
+> Conceptual - User / Develer 
+> logical - mysql / db2/ dbderby / postgres/ oracle (Primary key/ foreign key, not null, uniqe)
+> physical - system (memory allocation) - talking to system, fragmentation 
+
+
+1945 - ENIAC / EDSAC / EDVAC 
+1st generatation - Mechanical  ( 2+2)
+2nd generation - semiconductor 
+3rd generation - chips 
+    > programming C / C++ / Microcontroller (8086/8085)
+    - Michine Level Langage 
+    - Assembly Language 
+    - Programming Language - C / C++ (How To Do Langauge ) - int *p = int*  malloc(100;), read the file content file *fptr; 
+    - Java / SQL - (What to do language) - Select * from emp; 
+
+1st Normalform  - dont have null values 
+2nd Normalform - every thing to be dependen on primary key 
+3rd Normalform - dont have your attribute dependen on another attribute (transivive dependency) - if they are dependent then 
+                they should be dependent on primary key only 
+
+BCNF - 4th Normal Form - linking table when you multiple attributes 
+5th 
+6th 
+
+unnormalized 
+
+Emp - 10,000
+
+Dept - 1,000
+
+Project - 300
+
+Location = 250 
+
+select e.empid, d.deptname from emp e , dept d, project p , location l 
+    where e.deptid = d.deptid 
+    and e.projectid = p.projectid
+    and e.locationid = l.locationid
+    and d.deptiid = 1000; 
+
+
+### NO SQL Databases 
+> MongoDB 
+> Redis 
+> Cassandra 
+> Memcache 
+> Spanner 
+> Dynamodb 
+
+
+> 1972 DB2 (IBM) - SQL - Postgres 
+> docker pull postgres 
+> Connecting to DB
+>   Drivers 
+..> Type1 Driver  - JDBC-ODBC Bridge, plus ODBC driver
+    where had few hundred transactions per day - to OS - has to talk to DB - get an act - give it to programming lanague 
+..> Type2 Driver - Native-API, partly Java Driver
+    - 1000's 1998 - java was popular - DB vendor came (Oracle / MySQL / DB2..... ) - it did not stay for even 1 year 
+..> Type3 Driver 
+    - EJB - Entripise Java Beans -Glassfish(Sun Microsystem) / JBoss(JBoss/ RedHat) / Weblogic (Oracle)/ websphere (IBM)
+..> Type4 Driver - Native-protocol, Pure Java Driver
+    - Java -Interface - (Oracle / Mysql/ db2, .... ) - .jar 
+
+
+# JDBC - JPA 
+
+> JPA is implemented - ORM - Hibernate / iBatis / TopLink / Castor etc 
+
+### DB's have default port 
+> MySQL - 3306 
+> Oracle-  1521 
+> Postgres - 5432
+> MongoDB 27017 
+
+
+### creating docker container for postgress
+> docker pull postgres
+> docker run --name postgres-sapient1 -p 5432:5432 -v /Users/naveenkumar/Desktop/postgres-db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=kanchan -d postgres
+> docker exec -it < containerid > psql -U postgres 
+
+
+
+###  Postgress commands 
+
+> \l - list dbs 
+> \c  dbname - to connect to db 
+> create table emp(empid int primary key, empname varchar(30), empsal decimal); 
+> \dt - to list the tables 
+> \d < tablename > - to desc table 
+
+*** 
 
 
 
