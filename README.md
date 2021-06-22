@@ -1002,23 +1002,25 @@ SQL - ACID
 
 
 1945 - ENIAC / EDSAC / EDVAC 
-1st generatation - Mechanical  ( 2+2)
-2nd generation - semiconductor 
-3rd generation - chips 
+> 1st generatation - Mechanical  ( 2+2)
+
+> 2nd generation - semiconductor 
+
+> 3rd generation - chips 
     > programming C / C++ / Microcontroller (8086/8085)
     - Michine Level Langage 
     - Assembly Language 
     - Programming Language - C / C++ (How To Do Langauge ) - int *p = int*  malloc(100;), read the file content file *fptr; 
     - Java / SQL - (What to do language) - Select * from emp; 
 
-1st Normalform  - dont have null values 
-2nd Normalform - every thing to be dependen on primary key 
-3rd Normalform - dont have your attribute dependen on another attribute (transivive dependency) - if they are dependent then 
-                they should be dependent on primary key only 
+> 1st Normalform  - dont have null values 
 
-BCNF - 4th Normal Form - linking table when you multiple attributes 
-5th 
-6th 
+> 2nd Normalform - every thing to be dependen on primary key 
+
+> 3rd Normalform - dont have your attribute dependen on another attribute (transivive dependency) - if they are dependent then they should be dependent on primary key only 
+
+> BCNF - 4th Normal Form - linking table when you multiple attributes 
+
 
 unnormalized 
 
@@ -1039,41 +1041,58 @@ select e.empid, d.deptname from emp e , dept d, project p , location l
 
 ### NO SQL Databases 
 > MongoDB 
+
 > Redis 
+
 > Cassandra 
+
 > Memcache 
+
 > Spanner 
+
 > Dynamodb 
 
 
 > 1972 DB2 (IBM) - SQL - Postgres 
 > docker pull postgres 
+
 > Connecting to DB
->   Drivers 
-..> Type1 Driver  - JDBC-ODBC Bridge, plus ODBC driver
+
+### Drivers 
+
+> Type1 Driver  - JDBC-ODBC Bridge, plus ODBC driver
     where had few hundred transactions per day - to OS - has to talk to DB - get an act - give it to programming lanague 
-..> Type2 Driver - Native-API, partly Java Driver
+
+>  Type2 Driver - Native-API, partly Java Driver
     - 1000's 1998 - java was popular - DB vendor came (Oracle / MySQL / DB2..... ) - it did not stay for even 1 year 
-..> Type3 Driver 
+
+>  Type3 Driver 
     - EJB - Entripise Java Beans -Glassfish(Sun Microsystem) / JBoss(JBoss/ RedHat) / Weblogic (Oracle)/ websphere (IBM)
-..> Type4 Driver - Native-protocol, Pure Java Driver
+
+> Type4 Driver - Native-protocol, Pure Java Driver
     - Java -Interface - (Oracle / Mysql/ db2, .... ) - .jar 
 
-
+*** 
 # JDBC - JPA 
 
 > JPA is implemented - ORM - Hibernate / iBatis / TopLink / Castor etc 
 
 ### DB's have default port 
 > MySQL - 3306 
+
 > Oracle-  1521 
+
 > Postgres - 5432
+
 > MongoDB 27017 
 
 
 ### creating docker container for postgress
+
 > docker pull postgres
+
 > docker run --name postgres-sapient1 -p 5432:5432 -v /Users/naveenkumar/Desktop/postgres-db:/var/lib/postgresql/data -e POSTGRES_PASSWORD=kanchan -d postgres
+
 > docker exec -it < containerid > psql -U postgres 
 
 
@@ -1081,9 +1100,13 @@ select e.empid, d.deptname from emp e , dept d, project p , location l
 ###  Postgress commands 
 
 > \l - list dbs 
+
 > \c  dbname - to connect to db 
+
 > create table emp(empid int primary key, empname varchar(30), empsal decimal); 
+
 > \dt - to list the tables 
+
 > \d < tablename > - to desc table 
 
 
@@ -1101,16 +1124,120 @@ select e.empid, d.deptname from emp e , dept d, project p , location l
 ```
 
 
-@Data -> Generates getters for all fields, a useful toString method, and hashCode and equals implementations that check all non-transient fields. Will also generate setters for all non-final fields, as well as a constructor.
+> @Data -> Generates getters for all fields, a useful toString method, and hashCode and equals implementations that check all non-transient fields. Will also generate setters for all non-final fields, as well as a constructor.
 Equivalent to @Getter @Setter @RequiredArgsConstructor @ToString @EqualsAndHashCode.
 
 
 ### working with JPA 
 - JPA is a standarad , implentor is Hibernate (it could be other people also like ibatis, toplik etc )
+````
+// is transient class 
+class Emp{}
 
+// persitence class 
+@Entity
+class Emp{}
+````
 *** 
 
+# DAY 7 
 
+### Retro - Day 6 
+```
+public void insert(Emp e) {
+
+    Sql ="insert into emp values(?,?,?)"; 
+    gc.ps = GC.getPostgresConn.preapredStatement(sql); 
+    gc.ps.setInt(1, e.getEmpId()); 
+}
+```
+
+
+
+> Inheritenace 
+
+```
+@Entity
+@Inheritance( strategy = InheritanceType.SINGLE_TABLE )
+@Inheritance( strategy = InheritanceType.JOINED )
+@Inheritance( strategy = InheritanceType.TABLE_PER_CLASS )
+
+class Vehicle {}
+
+
+@Entity 
+class Car extends Vehicle {}
+
+Car c = new Car(); 
+
+```
+
+> composition 
+
+```
+    @Embedded 
+    class Emp {
+        private Name name; 
+        .... 
+    }
+    @Embdeble 
+    class Name {
+
+    }
+
+```
+
+
+Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for eclipse)
+
+
+
+> What is Java/.net/python...  - OOPS 
+> ORM - Hibernate 
+> DB - RDBMS 
+
+*** 
+> Overview of NOSQL and Mongodb
+> Setup a local server
+> Mongodb Atlas
+> Basic operations on collections
+> Using Mongodb drivers in Java 
+> Examples of Save+Retrieve docs from Java
+
+> DB (Mongo) 
+    > they are not normalized 
+    > embdded document 
+    > json 
+    > can store objects directly with some converters (jackson/gson)
+    > Java Object -> Json (with Jackson / Gson )
+    > generally fast 
+    > no concept of ACID 
+    > Horizontal Scalability 
+
+    {}
+
+
+> DBMS (Oracle / Postgress)
+    > they are normalized 
+    > refrential integrity 
+    > atomic 
+    > Object - Atomic - JAXB
+    > that does not mean this is slow 
+    > storong ACID 
+    > Vertical  Scalability 
+
+
+> Processor - 2.4 Ghz (1,000,000,000) - small - 64 bit 
+
+> Cache - 2-3 mb  (Ghz)
+
+> RAM - 2.4 MHZ - 16GB 
+
+> HDD - 10,000 RPM (1 TB )
+
+
+> by default mongodb will look in windows (c:\data\db) in unix flavour os (/data/db)
+**** 
 
 
 
