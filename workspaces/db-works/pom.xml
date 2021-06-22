@@ -36,5 +36,15 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.30</version>
 		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+		<dependency>
+			<groupId>org.mongodb</groupId>
+			<artifactId>mongo-java-driver</artifactId>
+			<version>3.9.1</version>
+		</dependency>
+
+
 	</dependencies>
 </project>

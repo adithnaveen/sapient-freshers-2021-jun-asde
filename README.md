@@ -1213,8 +1213,9 @@ Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for ecli
     > generally fast 
     > no concept of ACID 
     > Horizontal Scalability 
-
-    {}
+    > Words to understand 
+        > DB, Collection, Record, field (key: value)
+    
 
 
 > DBMS (Oracle / Postgress)
@@ -1225,6 +1226,8 @@ Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for ecli
     > that does not mean this is slow 
     > storong ACID 
     > Vertical  Scalability 
+    > Words to understand 
+        > DB, Table, Row/Tuple / Attirbute 
 
 
 > Processor - 2.4 Ghz (1,000,000,000) - small - 64 bit 
@@ -1237,6 +1240,41 @@ Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for ecli
 
 
 > by default mongodb will look in windows (c:\data\db) in unix flavour os (/data/db)
+
+Folder where fils are kept  /Users/naveenkumar/Desktop/mongodb .wt  
+```
+> mongod --dbpath .   - to start the server 
+
+> monog - will connect to server, it is client shell, by default will connect to 27017
+
+> show dbs 
+
+> db.emps.insert({empid:101, empname:"Rizwan"}); 
+
+> db.emps.insert({empid:102, empname:"Hemanth"});  
+
+> show collections 
+```
+### Query 
+Syntax 
+> db.emps.find({selection} , {projection}); 
+
+> db.emps.find({empname:"Rizwan"}, {_id:0, empname:1})
+
+> db.emps.insert({empid:103, name:"Prateek", address: {hno:123, street:"American Dream Way", state:"VA"}})
+
+> db.emps.find({"address.hno":123})
+
+
+#### Mongo Jaa 
+```<!-- https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver -->
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongo-java-driver</artifactId>
+    <version>3.9.1</version>
+</dependency>
+
+```
 **** 
 
 
