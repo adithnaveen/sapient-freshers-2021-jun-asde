@@ -1,4 +1,4 @@
-package com.naveen.contracts;
+package com.company.contracts;
 
 import java.util.List;
 

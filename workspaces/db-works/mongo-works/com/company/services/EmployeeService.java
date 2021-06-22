@@ -7,12 +7,12 @@ import java.util.List;
 
 import org.bson.conversions.Bson;
 
+import com.company.contracts.IEmployeeDAO;
 import com.company.entity.Employee;
 import com.company.util.MongoUtil;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
-import com.naveen.contracts.IEmployeeDAO;
 
 public class EmployeeService implements IEmployeeDAO {
 	private MongoClient mongoClient ; 
