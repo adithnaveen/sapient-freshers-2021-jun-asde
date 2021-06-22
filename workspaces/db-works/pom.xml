@@ -5,7 +5,7 @@
 	<groupId>com.naveen</groupId>
 	<artifactId>db-works</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<packaging>jar</packaging>
 	<properties>
 		<java.compiler.source>1.8</java.compiler.source>
 		<java.compiler.target>1.8</java.compiler.target>
@@ -24,6 +24,17 @@
 			<artifactId>hibernate-core</artifactId>
 			<version>5.4.4.Final</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+		<!-- <dependency> <groupId>org.hibernate</groupId> <artifactId>hibernate-validator</artifactId> 
+			<version>5.1.3.Final</version> </dependency> -->
+
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator-cdi</artifactId>
+			<version>7.0.1.Final</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>

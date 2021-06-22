@@ -1204,6 +1204,9 @@ Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for ecli
 > Using Mongodb drivers in Java 
 > Examples of Save+Retrieve docs from Java
 
+
+<img src="./image/../images/mongo.drawio.png" width="400">
+
 > DB (Mongo) 
     > they are not normalized 
     > embdded document 
@@ -1275,6 +1278,51 @@ Syntax
 </dependency>
 
 ```
+
+### We have written the methods for 
+
+> insert one / insert many 
+
+> update 
+
+> delete 
+
+> select 
+
+> select all 
+
+> select condition 
+
+To explore - TODO 
+
+> upsert 
+```
+ class Employee {
+     private Name name; 
+     ... 
+ }
+
+class Name {
+    private String empName; 
+    .... 
+ }
+ ```
+
+> Refractor use proper interfaces / dao classes 
+
+> try with validators 
+
+
+
+> sonar checks 
+> Add a nested comment explaining why this method is empty, 
+    throw an UnsupportedOperationException or complete the implementation.
+
+
+
+### Project Structure 
+
+<img src="./images/project-project-structure.drawio.png" width="400">
 **** 
 
 
