@@ -1322,7 +1322,8 @@ class Name {
 
 ### Project Structure 
 
-<img src="./images/project-project-structure.drawio.png" width="400">
+<img src="./images/project-structure.drawio.png" width="400">
+
 **** 
 
 
