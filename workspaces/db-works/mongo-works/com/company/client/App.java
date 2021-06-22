@@ -6,6 +6,7 @@ import static com.mongodb.client.model.Filters.and;
 
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import org.bson.BSON;
@@ -60,6 +61,7 @@ public class App {
 
 	private static void updateMany(MongoCollection<Employee> empsCollection) {
 		// update city to 111 		
+		
 		UpdateResult updateMany = empsCollection.updateMany(eq("empId", 111),Updates.set("city", "Bengaluru"));
 		
 		log.info("no of records updated : {}", updateMany.getModifiedCount());
@@ -99,15 +101,13 @@ public class App {
 	};
 
 	private static Employee getOneRecord(MongoCollection<Employee> empsCollection) {
-		Employee record = empsCollection.find(eq("empId", 111)).first();
-		return record;
+		return empsCollection.find(eq("empId", 111)).first();
 	}
 
 	private static void insertMany(MongoCollection<Employee> empsCollection) {
 		List<Employee> list = new ArrayList<Employee>(); 
 		list.add(new Employee(110, "Sushruth", 1234));
 		list.add(new Employee(111, "Kanva", 1122));
-		
 		
 		empsCollection.insertMany(list);
 	}
