@@ -1208,29 +1208,45 @@ Lombok - we added lombock in pom.xml + java -jar lombok.jar (installeer for ecli
 <img src="./image/../images/mongo.drawio.png" width="400">
 
 > DB (Mongo) 
-    > they are not normalized 
-    > embdded document 
-    > json 
-    > can store objects directly with some converters (jackson/gson)
-    > Java Object -> Json (with Jackson / Gson )
-    > generally fast 
-    > no concept of ACID 
-    > Horizontal Scalability 
-    > Words to understand 
+    -  they are not normalized 
+
+    - embdded document 
+
+    - json 
+
+    - can store objects directly with some converters (jackson/gson)
+
+    - Java Object ->  Json (with Jackson / Gson )
+
+    - generally fast 
+
+    - no concept of ACID 
+
+    - Horizontal Scalability 
+
+    - Words to understand 
         > DB, Collection, Record, field (key: value)
     
 
 
 > DBMS (Oracle / Postgress)
-    > they are normalized 
-    > refrential integrity 
-    > atomic 
-    > Object - Atomic - JAXB
-    > that does not mean this is slow 
-    > storong ACID 
-    > Vertical  Scalability 
-    > Words to understand 
-        > DB, Table, Row/Tuple / Attirbute 
+    - they are normalized 
+
+    - refrential integrity 
+
+    - atomic 
+
+    - Object - Atomic - JAXB
+
+    - that does not mean this is slow 
+
+    - storong ACID 
+
+    - Vertical  Scalability 
+
+    - Words to understand 
+
+        - DB, Table, Row/Tuple / Attirbute 
 
 
 > Processor - 2.4 Ghz (1,000,000,000) - small - 64 bit 
@@ -1326,6 +1342,36 @@ class Name {
 
 **** 
 
+# Day 8 
+
+Overview of HTTP
+Request/Response model: RFC-2616
+Examples: access public APIs
+Server side coding in Java
+Servlets and HTTP
+Handling client requests
+Parameters/headers/cookies
+Filters + Listeners 
+
+
+- early 90's 
+- GUI - Applets, swing, d2k 
+- you got to have a piece software to run (STUB) - Floppy(1.44MD, 512KB) / CD / DVD / USB (386, 486, pentimum 1, 2, 3)
+- in the server side we have skeleton (Interface + BL + DB)
+- RMI - Remote Method Invocation, COM, DCOM, EDI, CORBA etc. 
+- W3C > ICANN Internet Corporation for Assigned Names and Numbers (~1994)
+- HTTP (1.0 - Stateful Prototocl), (1.1 - stateless prototocol), (2.0 - two way protocol-gRPC)
+- CGI -> (Sun Microsystems / Microsoft)
+- Threads which developer can manage 
+- 1.1 - stateless prototocol - (Sun Microsystems / Microsoft), PHP, Python 
+
+
+
+#### Servlets 
+
+- Servlets is a class which extends HttpServlet
+- you can make an entry of the servlet for container(Tomcat) - either in web.xml or annotate @WebServlet 
+**** 
 
 
 

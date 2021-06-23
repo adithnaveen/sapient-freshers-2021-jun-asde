@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration.html</title>
+</head>
+<body>
+	<h2>Registration File</h2>
+	
+	<form method="post" action="/registration">
+		<table border="2">
+			<tr>
+				<td>Enter User Name</td>
+				<td><input type="text" name="user-name" /> </td>
+			</tr>
+			<tr>
+				<td>Enter password</td>
+				<td><input type="password" name="password" /> </td>
+			</tr>
+			<tr>
+				<td>Select Your Gender </td>
+				<td>
+					<input type="radio" name="gender" value="male"> Male |
+					<input type="radio" name="gender" value="female"> Female 
+				</td>
+			</tr>
+			<tr>
+				<td>Your Interest</td>
+				<td>
+					<input type="checkbox" name="interest" value="sports"> Sports |
+					<input type="checkbox" name="interest" value="politics"> Politics | 
+					<input type="checkbox" name="interest" value="cooking"> Cooking | 
+					<input type="checkbox" name="interest" value="biking"> Biking | 
+					<input type="checkbox" name="interest" value="others"> Others |    
+				</td>
+			</tr>
+			<tr>
+				<td>Select Your Qualification</td>
+				<td>
+					<select name="qual">
+						<option value="engg">Engineer</option>
+						<option value="master">Masters</option>
+						<option value="doctor">Doctor</option>
+						<option value="scientists">Scientists</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="Register"/>				
+				</td>
+				<td>
+					<input type="reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+	
+</body>
+</html>

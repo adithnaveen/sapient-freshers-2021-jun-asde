@@ -32,4 +32,16 @@ Mongo CRUD
 > https://developer.mongodb.com/quickstart/java-setup-crud-operations/?utm_campaign=javainsertingdocuments&utm_source=facebook&utm_medium=organic_social
 
 
+ Draw.io cheat sheet 
+> https://www.draw.io/shortcuts.svg
+
+
+Eclipse JEE
+> https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers
+
+
+
+
+
+
 
