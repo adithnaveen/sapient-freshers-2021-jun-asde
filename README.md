@@ -1375,6 +1375,9 @@ Filters + Listeners
 Cookie v/s storage(local / Session)
 - Cookie the end user has to ack , to store only text data 
 - storage is for developers to store large data 
+
+<img src="./images/http-request.drawio.png" width="400">
+
 **** 
 
 
