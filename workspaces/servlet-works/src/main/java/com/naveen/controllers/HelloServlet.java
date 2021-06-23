@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.company.contracts.IEmployeeDAO;
+import com.naveen.sql.entity.Emp;
+
 @WebServlet("/hello")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -33,6 +36,7 @@ public class HelloServlet extends HttpServlet {
 	// per user request 
 	protected void doGet(HttpServletRequest request, 
 				HttpServletResponse response) throws ServletException, IOException {
+		 
 		
 		response.setContentType("text/html");
 		// ctrl + 2 + l 

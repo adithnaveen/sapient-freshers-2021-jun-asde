@@ -40,7 +40,8 @@ Eclipse JEE
 > https://www.eclipse.org/downloads/packages/release/juno/sr1/eclipse-ide-java-ee-developers
 
 
-
+server code 
+> https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 
 
