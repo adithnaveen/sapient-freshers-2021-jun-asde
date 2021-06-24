@@ -1414,6 +1414,31 @@ class Emp {
 - get you dependencies (https://mvnrepository.com/artifact/javax.servlet/jstl) 
 
 
+- project branching 
+
+> sanjana, prateek, akshit, hemanth 
+. txt file 
+- user 1- description user 1 - 2days - sanjana - PJMB-123-building-login-page
+- user 2- description user 2 - 2days - prateek - PJMB-124-building-reg-page
+- user 3- description user 3 - 2days - akshit - PJMB-125-building-post-question-page
+- user 4- description user 4 - 2days - hemanth - PJMB-126-building-post-answer-page
+
+### raise PR for all 
+ PJMB-123-building-login-page -> dev 
+ PJMB-124-building-reg-page -> dev 
+ PJMB-125-building-post-question-page - dev 
+ PJMB-126-building-post-answer-page -> dev 
+
+ 
+- bootstrap 
+- html 
+- css 
+- servlets
+- jsp 
+- POJO 
+- jUnit 
+
+
 **** 
 
 
