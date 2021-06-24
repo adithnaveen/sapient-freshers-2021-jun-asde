@@ -4,6 +4,13 @@ import java.util.List;
 
 import com.naveen.sql.entity.Emp;
 
+
+/**
+ * 
+ * @author naveenkumar
+ * @see this methods are used for CRUD 
+ *
+ */
 public interface IEmpDAO {
 	public boolean insertEmp(Emp emp);
 

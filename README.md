@@ -1380,7 +1380,41 @@ Cookie v/s storage(local / Session)
 
 **** 
 
+# Day 9
 
+- HTML response using JSP
+- MVC for building a web application using servlets/jsp
+- understanding sessions,  context, page, request 
+
+
+<img src="./images/mvc.drawio.png" width="400>
+
+- working of session or other containers 
+<img src="./images/session.drawio.png">
+
+
+req.getSession() - Returns the current session associated with this request, or if the request does not have a session, creates one.
+
+JSP Support - EL - to avoid usage of scritlet 
+> ${... }
+> 
+
+```
+class Emp {
+    private int empId; 
+    public Emp(int empId) {
+        this.empId = empId;
+    }
+
+}```
+
+
+> building a MVC program (full stack with JAVA)
+
+- get you dependencies (https://mvnrepository.com/artifact/javax.servlet/jstl) 
+
+
+**** 
 
 
 

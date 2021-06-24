@@ -11,6 +11,8 @@ https://www.draw.io/shortcuts.svg
     - create ER with draw.io 
 
     - yet to do multi module project 
+
+
 > Team 2 - Deepanjan, kanav, rizwan, praduman 
     
     - create user stories 
@@ -75,11 +77,80 @@ https://www.draw.io/shortcuts.svg
 
 
 
+> 24-jun-2021
+
+
+> Team 1 - Prateek, rajshekar, akshit, harshit
+
+- created user stories 
+- create ER with draw.io  (done)
+- yet to do multi module project  (done)
+- feature file is created 
+- connected with mongodb 
+- schema for postgres is done 
+- still have to finalize data model 
+- https://github.com/blankRSD/QAries/blob/prateek/databasesql/ER_team1_2.png
+
+
+
+> Team 2 - Deepanjan, kanav, rizwan, praduman 
+- create user stories (done)
+- tried with multi module project - will finalize today (done)
+- schema + ER is done 
+- created data model for mongodb / nosql 
+- bean classes are created for postgres 
+- docerize postgress (done)+ mongodb (yet TODO)
+
+
+
+> Team 3 - karmanya, priyadarshan, aarsh verdhan, akhil 
+- create user stories - done 
+- data model is created - done 
+- done with the ER - share the link 
+- not started with project strucutre
+- have created class diagram 
+- need sequence diagram 
+- create multi module project 
+- docerize postgress (done)+ mongodb  (done)
+    
 
 
 
 
+> Team 4 - krishna, aneesha, bitan, sailaja 
+- create user stories - done 
+- need to draw the ER - yet to do 
+- sequence diagram - done 
+- create schema for postgres, 
+- data model for mongo - done 
+- have setup docker for postgres(yes), monogdb  (Yet to be done)
+- multi module project - done 
 
+
+
+> Team 5 - rohit, laksay, shushut, siddharth 
+- done with user stories 
+- postgres  ER  - done 
+- have setup docker for postgres, monogdb (not yet)
+- multi module project - done
+- data model  - done 
+- class diagram + sequence diagram (yet tobe done)
+
+
+
+> Team 6 - sanjana, suhas, hemanth, veena 
+- create user stories 
+- er diagram + schema - done 
+- started development have done JPA code 
+- data model is ready with excel 
+- confused with what data will go where 
+- yet to setup multi module project 
+- class diagram - done 
+- sequence diagram - yet to do 
+
+
+
+<img src="./branching-structure.drawio.png">
 
 
 

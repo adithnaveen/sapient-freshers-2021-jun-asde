@@ -10,6 +10,12 @@ import com.naveen.sql.util.GetConnection;
 
 import lombok.extern.slf4j.Slf4j;
 
+
+/**
+ * 
+ * @author naveenkumar
+ *
+ */
 @Slf4j
 public class EmpDAO implements IEmpDAO{
 
