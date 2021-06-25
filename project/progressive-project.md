@@ -154,6 +154,58 @@ https://www.draw.io/shortcuts.svg
 
 
 
+## 25 Jun 2021 
+
+Team1: 
+- User registration done 
+- services for BL 
+- working on login 
+- services for login is in process 
+- some bugs to be resolved by team 
+- need to seed the code to bit bucket 
+
+Team2: 
+- started with test cases 
+- view and controllers are pending 
+- BL is working ... 
+  
+Team3: 
+- BL is in progress 
+- DAO / Services are done 
+- View to be done 
+- user reg - services (done) - view in progress 
+- sequence is done 
+- junit(jupiter) in some order 
+
+Team4: 
+- CRUD - DAO Layer is done 
+- working on controller 
+- need to write test cases 
+
+
+Team5: 
+- dao layer is completed 
+- working on controller 
+- sequence, class  is done, 
+- docerized the DB 
+- view is in progress 
+
+Team6: 
+- DAO layer is in progress 
+- need to write controller 
+- sequence diagram is done 
+- docerized the DB 
+
+
+
+
+
+
+
+
+
+
+
 
 
 

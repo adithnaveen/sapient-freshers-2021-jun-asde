@@ -1393,11 +1393,11 @@ Cookie v/s storage(local / Session)
 <img src="./images/session.drawio.png">
 
 
-req.getSession() - Returns the current session associated with this request, or if the request does not have a session, creates one.
+> req.getSession() - Returns the current session associated with this request, or if the request does not have a session, creates one.
 
 JSP Support - EL - to avoid usage of scritlet 
 > ${... }
-> 
+
 
 ```
 class Emp {
@@ -1406,7 +1406,8 @@ class Emp {
         this.empId = empId;
     }
 
-}```
+}
+```
 
 
 > building a MVC program (full stack with JAVA)
@@ -1440,6 +1441,51 @@ class Emp {
 
 
 **** 
+
+# Day 10
+
+
+Performance testing techniques(white box, grey box, black box) 
+Load testing
+Stress testing
+Soak testing
+Spike testing
+Performance tools
+Jmeter/Gatling
+
+
+
+
+- NFR - Non Functional Requirement 
+- Sanity Test - everything once 
+- Functional Test - testing 1 functions 
+- Component / Integration Test 
+  - if you test 1 method - Unit Test 
+  - if you combile 2 methods - integration 
+  - component - cohesive 
+- 100000 times - load test / stress test 
+- 10:00 (5 Req) -> 10:30 (20 Req) -> 11:00 (5000000 Req)- spike test 
+  - Kubernetees 
+  - Racher 
+  - Docker Swarm 
+  - EKS + ECS 
+- you are not calling application directly - rather the application calls application 
+- jMeter - Java  / Gatling  / Lucust 
+
+> http://localhost:8080/ < Enter >
+> http://localhost:8080/blah < Enter >
+
+
+- A - not good quality - okiesh 
+- AA - USA 508 Standard, screen reader enabled, mobile / tablet / desktop compatible 
+- AAA  - USA 508 Standard, screen reader enabled, mobile / tablet / desktop compatible + color codes for blind 
+
+
+
+
+https://www.publicissapient.com
+https://www.publicissapient.com/industries/energy-commodities/tech-awards
+
 
 
 
