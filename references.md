@@ -44,5 +44,8 @@ server code
 > https://en.wikipedia.org/wiki/List_of_HTTP_status_codes
 
 
+sonar scanner 
+> https://docs.sonarqube.org/latest/analysis/analysis-parameters/
+
 
 

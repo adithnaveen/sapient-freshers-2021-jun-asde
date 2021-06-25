@@ -1,5 +1,7 @@
 package com.sapient.tdd;
 
+import com.mycompany.exception.MyRunTimeException;
+
 public class Sample {
 
 	public String sayHi(String name) {
@@ -14,11 +16,11 @@ public class Sample {
 			try {
 				Thread.sleep(2000);
 			} catch (InterruptedException e) {
-				e.printStackTrace();
+				 Thread.currentThread().interrupt();
 			}
 			return "Stored " + name;
 		}else {
-			throw new RuntimeException("Sorry invalid name"); 
+			throw new MyRunTimeException("custom runtime thrown..."); 
 		}
 	}
 }
