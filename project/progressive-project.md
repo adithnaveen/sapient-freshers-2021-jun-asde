@@ -198,6 +198,46 @@ Team6:
 
 
 
+## 28-jun-2021 
+
+Team1: 
+- the stories are completed 
+- have added test cases with junit
+- sequence is complete 
+- have not generated sonar qube report 
+- have not docerized / jenkins 
+- the code is on bitbucket - team1-dev 
+
+
+Team2: 
+- have developed 
+- docerized 
+- it not working with bitbucket - cloning problem 
+
+Team3:
+- it not working with bitbucket - cloning problem 
+- have dockerized the work 
+- services are covered with the test cases 
+
+Team4: 
+- dev is done 
+- team4 branch 
+- have not docerized / jenkins 
+- DB are docerized 
+
+Team5: 
+- dev is done 
+- dao is tested / partially controller 
+- still to do dockerized 
+- have to get sonar report 
+- have tried branching - there is a merge conflict 
+
+Team6: 
+- problem with integration 
+- dev is completed 
+- dockerized DB 
+- 
+
 
 
 

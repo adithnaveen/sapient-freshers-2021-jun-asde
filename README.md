@@ -1519,11 +1519,82 @@ Jenkinsfile
 >
 > mvn clean install -DskipTests=true 
  
+ 
 
 
+- whitebbox - performance - I'm a developer - develop  (unit testing) - BL 
+- grey box - intrim test - we not only 1 method we combine more than 1 - 
+- black box - E2E - black box test 
+- 
 
 
+*******
 
+# Day 11 
+
+- POJO (cohesive coding if coupled there is not body to check)
+- constroller Servlet 
+- view ( JSP) - portlet, JSF 
+- full stack (only with java tecchnology)
+
+- container 
+  - tomcat 
+    - init 
+    - service 
+    - destory 
+
+
+- EJB - ran into gb's and you needed middle tier 
+
+- 80, 90, 2000's 
+- Corba 
+
+- Struts (1,2) 
+- web framework 
+- Rod Johson - Spring 
+
+```
+
+    class Employee {
+
+        protected void finalize() {}
+    }
+
+
+    Employee e = new Employee(); 
+```
+- jdk 1.5 - 2004 
+- JVM - GC - when it wants not when you want 
+- System.getRuntime().gc(); - super costly 
+
+
+- Spring - IOC/DI 
+- Spring MVC 
+- Spring Boot + Netflix (eureka, api-gateway, hystrix, zipkin), swagger(documentation)
+- Security - JWT 
+
+
+- with servlet 
+
+````
+    @WebServlet("/*")
+    public class DispatcherServlet extends HttpServlet {
+        void doGet(HttpServletRequest req, HttpServletResponse res) {}
+
+    }
+
+// will be injected to you POJO 
+    class MyServlet {
+            HttpServlet httpServlet ; 
+    }
+
+````
+
+> mkdir kanav kanav/week3 kanav/week3/d1 kanav/week3/d2 kanav/week3/d3 kanav/week3/d4 kanav/week3/d5
+> touch readme.md
+> touch kanav/week3/readme.md
+> touch kanav/week3/d1/readme.md
+> touch kanav/week3/d2/readme.md
 
 
 

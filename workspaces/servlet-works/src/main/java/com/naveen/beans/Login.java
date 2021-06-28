@@ -9,6 +9,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Login {
 	private String userName; 
-	private String password; 
+	private String password;
+	
+	
+	@Override
+	protected void finalize() throws Throwable {
+		System.out.println("inside finalize login... ");
+	} 
 	
 }
