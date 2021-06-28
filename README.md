@@ -1469,9 +1469,11 @@ Jmeter/Gatling
   - Racher 
   - Docker Swarm 
   - EKS + ECS 
-- you are not calling application directly - rather the application calls application 
+- you are not calling application directly - rather the application calls application for a duration of time 
 - jMeter - Java  / Gatling  / Lucust 
+- A system may behave normally when used for 2 hours, but when the same system is used continuously for 10 hours or more than that then it may fail or behave abnormally/randomly/it may crash. To predict such failure Soak Testing is performed.
 
+  
 > http://localhost:8080/ < Enter >
 > http://localhost:8080/blah < Enter >
 
@@ -1487,20 +1489,36 @@ https://www.publicissapient.com
 https://www.publicissapient.com/industries/energy-commodities/tech-awards
 
 
+> docker run --name sap-sonar -p 9000:9000 -d sonarqube
+
+
+*** 
+
+### Sonar 
+Project Name : first-project
+token : naveen - c18bd838d076195e879ffbf09e7109a5e98403ab
+
+
+mvn sonar:sonar \
+  -Dsonar.projectKey=first-project \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=c18bd838d076195e879ffbf09e7109a5e98403ab
 
 
 
 
+Jenkinsfile 
+    - the code bitbucket + branch 
+    - bundle as war 
+    - Dockerfile 
+    -   from Tomcat 
+    -   copy . /usr/local/tomcat/webapps 
+    
 
-
-
-
-
-
-
-
-
-
+> mvn clean install -DskipTests=true 
+>
+> mvn clean install -DskipTests=true 
+ 
 
 
 
