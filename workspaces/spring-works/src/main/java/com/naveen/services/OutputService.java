@@ -1,14 +1,21 @@
 package com.naveen.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
 public class OutputService {
 	private GreetService greetService;
 	private TimeService timeService;
-	private String name;
 
-	public OutputService(GreetService greetService, TimeService timeService, String name) {
+	@Value("${application.name}")
+	private String name; 
+	
+	@Autowired
+	public OutputService(GreetService greetService, TimeService timeService) {
 		this.greetService = greetService;
 		this.timeService = timeService;
-		this.name = name;
 	}
 
 	public void generateOutput() {

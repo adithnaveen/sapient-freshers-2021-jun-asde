@@ -3,6 +3,7 @@ package com.naveen.client;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.naveen.config.ApplicationConfig;
+import com.naveen.services.GreetService;
 import com.naveen.services.OutputService;
 
 public class Application {
@@ -10,9 +11,20 @@ public class Application {
 
 		
 		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfig.class);
-		OutputService outputService = context.getBean(OutputService.class); 
-		
+		OutputService outputService = context.getBean(OutputService.class); 		
 		outputService.generateOutput();
+		
+//		GreetService gs = (GreetService) context.getBean("myBean");
+		
+		GreetService gs = context.getBean("myGreet", GreetService.class); 
+		System.out.println(gs);
+
+		gs = context.getBean("myGreet", GreetService.class); 
+		System.out.println(gs);
+
+
+		// the destruction is taken care by spring 
+//		context.destroy(); 
 		
 	}
 
