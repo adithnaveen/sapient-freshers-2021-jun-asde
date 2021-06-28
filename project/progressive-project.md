@@ -208,7 +208,6 @@ Team1:
 - have not docerized / jenkins 
 - the code is on bitbucket - team1-dev 
 
-
 Team2: 
 - have developed 
 - docerized 
@@ -236,8 +235,6 @@ Team6:
 - problem with integration 
 - dev is completed 
 - dockerized DB 
-- 
-
 
 
 

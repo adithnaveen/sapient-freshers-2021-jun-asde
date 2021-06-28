@@ -1599,4 +1599,31 @@ Jenkinsfile
 
 
 
+> Spring with xml 
+````
+    <beans>
+        <bean id="Hi" class="com.naveen.Hi></bean>
+
+        <bean id="One" class="com.naveen.One autowire="byName"/>
+
+        <bean id="Two" class="com.naveen.Two></bean>
+        <bean id="Three" class="com.naveen.Three></bean>
+        <bean id="app" class="com.naveen.App autowire="byName" / >
+    <beans>
+
+
+    class One {
+        Hi hi; 
+    }
+    class Two {}
+    class Three {}
+    class App {
+        private One one; 
+        private Two two; 
+        private Three three; 
+
+    }
+````
+
+
 
