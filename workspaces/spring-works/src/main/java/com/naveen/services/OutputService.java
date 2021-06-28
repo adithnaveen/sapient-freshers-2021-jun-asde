@@ -19,7 +19,8 @@ public class OutputService {
 	}
 
 	public void generateOutput() {
-		System.out.println(greetService.sayGreeting(name) + " at " + timeService.getCurrentTime());
+		System.out.println("-----" + 
+	greetService.sayGreeting(name) + " at " + timeService.getCurrentTime() +"-----");
 	}
 }
 

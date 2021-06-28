@@ -3,6 +3,7 @@ package com.naveen.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.annotation.Scope;
@@ -11,7 +12,8 @@ import com.naveen.services.GreetService;
 
 @Configuration
 @PropertySource("classpath:application.properties")
-@ComponentScan(basePackages = {"com.naveen.services"})
+@ComponentScan(basePackages = {"com.naveen.services", "com.naveen.aspects"})
+@EnableAspectJAutoProxy
 public class ApplicationConfig {
 
 //	@Scope(value = "single") // by default

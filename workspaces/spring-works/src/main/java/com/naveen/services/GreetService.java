@@ -3,6 +3,8 @@ package com.naveen.services;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.naveen.aspects.Loggable;
+
 @Service
 public class GreetService {
 	@Value("${application.greeting}")
@@ -13,7 +15,9 @@ public class GreetService {
 		System.out.println("GreetService.GreetService()");
 	}
 
+	@Loggable
 	public String sayGreeting(String name) {
+		System.out.println("--- i'm in sayGreeting----");
 		return greeting + " -> " + name;
 	}
 	

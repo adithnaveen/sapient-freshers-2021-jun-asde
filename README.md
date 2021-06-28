@@ -1602,12 +1602,12 @@ Jenkinsfile
 > Spring with xml 
 ````
     <beans>
-        <bean id="Hi" class="com.naveen.Hi></bean>
+        <bean id="hi" class="com.naveen.Hi></bean>
 
-        <bean id="One" class="com.naveen.One autowire="byName"/>
+        <bean id="one" class="com.naveen.One autowire="byName"/>
+        <bean id="two" class="com.naveen.Two></bean>
+        <bean id="three" class="com.naveen.Three></bean>
 
-        <bean id="Two" class="com.naveen.Two></bean>
-        <bean id="Three" class="com.naveen.Three></bean>
         <bean id="app" class="com.naveen.App autowire="byName" / >
     <beans>
 
@@ -1625,5 +1625,27 @@ Jenkinsfile
     }
 ````
 
+> @Service 
+
+> @Comonent 
+
+> @Repository 
+
+***
+
+## AOP 
+> Before 
+> After 
+-  AfterReturning 
+-  AfterThrowing
+> Around
 
 
+> Aspect: a modularization of a concern that cuts across multiple classes. - method 
+
+> Join point: a point during the execution of a program, such as the execution of a method or the handling of an exception. In Spring AOP, a join point always represents a method execution.
+
+> Advice: action taken by an aspect at a particular join point.
+
+> Pointcut: a predicate that matches join points.
+> @Pointcut("execution(* transfer(..))")// the pointcut expression

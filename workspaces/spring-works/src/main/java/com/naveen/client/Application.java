@@ -14,18 +14,21 @@ public class Application {
 		OutputService outputService = context.getBean(OutputService.class); 		
 		outputService.generateOutput();
 		
-//		GreetService gs = (GreetService) context.getBean("myBean");
 		
-		GreetService gs = context.getBean("myGreet", GreetService.class); 
-		System.out.println(gs);
+	}
 
-		gs = context.getBean("myGreet", GreetService.class); 
-		System.out.println(gs);
-
-
-		// the destruction is taken care by spring 
-//		context.destroy(); 
+	private static void beanWithParams(AnnotationConfigApplicationContext context) {
+		//		GreetService gs = (GreetService) context.getBean("myBean");
+				
+				GreetService gs = context.getBean("myGreet", GreetService.class); 
+				System.out.println(gs);
 		
+				gs = context.getBean("myGreet", GreetService.class); 
+				System.out.println(gs);
+		
+		
+				// the destruction is taken care by spring 
+		//		context.destroy(); 
 	}
 
 	/*
