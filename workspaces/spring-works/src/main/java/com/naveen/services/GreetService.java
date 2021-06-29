@@ -3,6 +3,7 @@ package com.naveen.services;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import com.naveen.aspects.Countable;
 import com.naveen.aspects.Loggable;
 
 @Service
@@ -16,6 +17,7 @@ public class GreetService {
 	}
 
 	@Loggable
+	@Countable
 	public String sayGreeting(String name) {
 		System.out.println("--- i'm in sayGreeting----");
 		return greeting + " -> " + name;

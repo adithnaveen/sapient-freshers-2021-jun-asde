@@ -1532,6 +1532,9 @@ Jenkinsfile
 
 # Day 11 
 
+<img src="./images/spring-arch.drawio.png" width="400">
+
+
 - POJO (cohesive coding if coupled there is not body to check)
 - constroller Servlet 
 - view ( JSP) - portlet, JSF 
@@ -1649,3 +1652,66 @@ Jenkinsfile
 
 > Pointcut: a predicate that matches join points.
 > @Pointcut("execution(* transfer(..))")// the pointcut expression
+
+
+
+*** 
+Assignment : 
+-  List amount of time takes for the method 
+-  Get the name of the method 
+-  Get method args of the methods
+-  Create a couter log which will keep a track of each method which is invoked and number of times 
+  
+  Hint :
+  ``` 
+  Map<String, Integer> countingMap = new HashMap();
+  
+  ```
+
+### protprocessing 
+
+    ```
+        @Component 
+
+        class Hi {
+            @Bean(id="myid", init ="init", destroy="destory")
+            public void getSomeBean() {}
+        }
+
+        
+        @Component 
+
+        class Bye {
+            @Bean(id="myid", init ="init", destroy="destory")
+            public void getSomeBean() {}
+        }
+
+        
+    ```
+
+
+> aop  - loggers - @Before then 
+
+> aop - loggers @After - you get all the details 
+
+BeanPostProcessr -> | mutate if you need | -> the actual bean is given to developer 
+
+
+
+***
+
+# Day 12 
+
+Spring MVC
+DispatcherServlet
+HandlerMapping
+ViewResolver
+Controller
+RestController
+Error handling
+
+
+
+
+
+*** 
