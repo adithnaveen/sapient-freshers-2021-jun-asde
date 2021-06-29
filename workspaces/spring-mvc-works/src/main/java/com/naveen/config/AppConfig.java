@@ -18,7 +18,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 // URL http://localhost:8080/spring-mvc-works/hello-mvc
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = { "com.naveen.controller", "com.naveen.dao" })
+@ComponentScan(basePackages = { "com.naveen.controller", "com.naveen.resource", "com.naveen.dao" })
 public class AppConfig implements WebApplicationInitializer, WebMvcConfigurer {
 
 	@Override

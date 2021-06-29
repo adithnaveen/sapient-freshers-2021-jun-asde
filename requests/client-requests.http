@@ -1,0 +1,21 @@
+http://localhost:8080/spring-mvc-works/api/questions
+
+
+### 
+
+GET http://localhost:8080/spring-mvc-works/api/questions
+Accept: application/json
+
+###
+
+
+POST  http://localhost:8080/spring-mvc-works/api/questions
+Content-Type: application/json
+
+{
+    "question": "indian president",
+    "option1": "APJ Abdul Kalam",
+    "option2": "Shankar Dayal Sharma",
+    "option3": "Venkataraman",
+    "option4": "Ramnath Kovind"
+  },
