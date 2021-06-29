@@ -10,6 +10,6 @@ public class HelloController {
 	@RequestMapping("/hello-mvc")
 	public String sayHello() {
 		System.out.println("HelloController.invoked... ");
-		return "/WEB-INF/pages/hello.jsp"; 
+		return "hello"; 
 	}
 }
