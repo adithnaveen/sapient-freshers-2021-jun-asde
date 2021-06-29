@@ -11,6 +11,7 @@ import org.springframework.web.context.support.AnnotationConfigWebApplicationCon
 import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
+// URL http://localhost:8080/spring-mvc-works/hello-mvc
 @Configuration
 @EnableWebMvc
 @ComponentScan(basePackages = {"com.naveen.controller", "com.naveen.dao"})
