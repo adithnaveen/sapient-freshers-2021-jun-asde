@@ -10,3 +10,12 @@ Accept: application/json
 
 GET http://localhost:9090/users
 Accept: application/json
+
+###
+
+
+GET http://localhost:9090/users/101
+Accept: application/json
+### 
+GET http://localhost:9090/users/obj/102
+Accept: application/json
