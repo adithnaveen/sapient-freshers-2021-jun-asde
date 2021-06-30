@@ -1872,6 +1872,17 @@ DELETE /resources/{resourceId} - delete 1
 > 4 - sharded + replication information
 > 4 - running serial number 
 
+
+{
+    question: "Your Question Goes Here", 
+    status: "open/close"
+    answers: [
+        {answer: "First Answer"}, 
+        {answer: "Second Answer"}, 
+        {answer: "Third Answer"} 
+    ]
+}
+
 *** 
 
 *** 
