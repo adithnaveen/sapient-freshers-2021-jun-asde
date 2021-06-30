@@ -13,9 +13,9 @@ POST  http://localhost:8080/spring-mvc-works/api/questions
 Content-Type: application/json
 
 {
-    "question": "indian president",
-    "option1": "APJ Abdul Kalam",
-    "option2": "Shankar Dayal Sharma",
-    "option3": "Venkataraman",
-    "option4": "Ramnath Kovind"
+    "question": "how are you",
+    "option1": "fine",
+    "option2": "very fine ",
+    "option3": "very very fine ",
+    "option4": "awesome"
   },

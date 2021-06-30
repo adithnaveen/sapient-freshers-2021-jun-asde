@@ -48,4 +48,5 @@ sonar scanner
 > https://docs.sonarqube.org/latest/analysis/analysis-parameters/
 
 
-
+Open API Standars
+> https://swagger.io/specification/

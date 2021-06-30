@@ -1719,3 +1719,171 @@ Error handling
 > suffic - .jsp 
 
 *** 
+
+
+# Day 13
+> Spring 5.x 
+> Sprint boot verstion 2.x 
+
+
+> 1999 
+> W3c - xpath, xml schema, xslt, xsl etc 
+> helped to create more languages and standars 
+> SOAP - Simple Object Access Protocol 
+> JDK1.6 - saop built in JAVA, jaxb is available 
+> standard
+> header and body 
+
+
+```
+<?xml version="1.0"?>
+
+<questions>
+    <question>
+        what is your name         
+    </question>
+      <question>
+        what is dad name         
+    </question>
+      <question>
+        what is mom name         
+    </question>
+</questions>
+
+> DOM(document object model) / SAX(Simple API for XML ) / StAX (Stream API For XML )
+> postulate - C, C++, JAVA (JAXB), .NET, PHP, PYTHON, GO, DART... 
+
+
+> 2003 - jessey james - google - ajax 
+> 2005 - json 
+
+{
+    questions: [
+        question:what is your name , 
+        question:what is dad name , 
+        question:what is mom name , 
+    ]
+}
+   
+```
+
+***** 
+```
+http://localhost:8080/someapplication/
+@RequestParam("/hello")
+@RequestParam("/hello1")
+@RequestParam("/hello2")
+@RequestParam("/hello3")
+
+```
+- jackson, gson
+> w3c approved - javascript 
+
+> REST 
+> RESTFULL
+
+> HATEOAS - Hypermedia as the Engine of Application State is a constraint of the REST application architecture that distinguishes it from other network application architectures.
+> RMM (richardson maturity model)
+- level 0 - Level zero of maturity does not make use of any of URI, HTTP Methods(GET/POST/PUT/DELETE/PATCH), and HATEOAS capabilities. ( RMI )
+- level 1 - Level one of maturity makes use of URIs out of URI, HTTP Methods, and HATEOAS. (RMI-CORBA)
+- level 2 - makes use of URIs and HTTP out of URI, HTTP Methods, and HATEOAS
+- level 3 - makes use of all three, i.e. URIs and HTTP and HATEOAS, it also gives links to the resources
+
+
+```
+@RestController("/resources")
+class MyResource{
+    @GetMapping("/{resourceId}")
+    public Resource getOneResource(int resourceId) {}
+    public List<Resource> getAllResource() {}
+    public Resource saveResrouce(Resource resource)
+    public Resrouce updateResource(Resource resource)
+    public void deleteResource(int resourceId){}
+}
+
+GET /
+GET /{resourceId}
+POST /
+PUT / 
+DELETE /{resourceId}
+
+
+```
+
+
+
+```
+@RestController 
+class MyResource{
+    
+    @GetMapping("/resources/{resourceId}")
+    public Resource getOneResource(int resourceId) {}
+    
+    @GetMapping("/resources")
+    public List<Resource> getAllResource() {}
+    
+    @PostMapping("/resources")
+    public Resource saveResrouce(Resource resource)
+    
+    @PutMapping("/resources")
+    public Resrouce updateResource(Resource resource)
+    
+    @DeleteMapping("/resources/{resourceId}")
+    public void deleteResource(int resourceId){}
+}
+
+GET /resources/{resourceId} - get one 
+GET /resources - get all 
+POST /resources - post 1 
+PUT /resources - update 1 
+DELETE /resources/{resourceId} - delete 1 
+
+
+
+    @GetMapping("/get-resources/{resourceId}")
+    public Resource getOneResource(int resourceId) {}
+    
+```
+
+
+- JAX-WS - SOAP
+- JAX-RS - REST 
+
+> jersey 
+> resteasy
+> restlet 
+> spring boot 
+
+
+> packages in spring boot application 
+
+- com.company.rest.works.config
+- com.company.rest.works.exception
+- com.company.rest.works.model
+- com.company.rest.works.repo
+- com.company.rest.works.resources
+- com.company.rest.works.services
+- com.company.rest.works.swagger
+
+
+
+> in mongodb object id is of 12 bytes data 
+> 4 - system information 
+> 4 - sharded + replication information
+> 4 - running serial number 
+
+*** 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
