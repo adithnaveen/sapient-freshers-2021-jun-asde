@@ -1968,13 +1968,76 @@ https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.8
 | Service Name                               | Port Number | Links                                                                      |
 | ------------------------------------------ | ----------- | -------------------------------------------------------------------------- |
 | Eureka                                     | 8761        | http://localhost:8761                                                      |
-| API Gateway                                | 8765        |
+| API Gateway                                | 8765        | http://localhost:8765/MESSAGE-SERVICE/message                              |
 | Message Service (Eureka Client, OpenFeign) | 9090 - 9095 | http://localhost:9090/message, http://localhost:9090/feign/message-details |
 | Message Detail Service                     | 9050 - 9050 | http://localhost:9050/message-details                                      |
 
 
+#### To invoke end poinsts 
+> http://localhost:9090/message 
+> http://localhost:9050/message-details
+> http://localhost:8765/message-service/message 
+
+> http://localhost:8765/MESSAGE-DETAILS-SERVICE/message-details 
+> http://localhost:8765/message-details-service/message-details (after ignoring in case in application.properties )
 
 
+#### to view swagger documentation 
+> http://localhost:9090/swagger-ui.html 
+
+> http://localhost:9090/v3/api-docs
+
+
+
+
+
+Message 
+- getMessage()
+- getMyName() 
+- saveMessage() 
+- updateMessage()
+- deleteMessage()
+- 
+MessageDetails 
+- getMessageDetails()
+- saveMessageDetails() 
+- updateMessageDetails()
+- deleteMessageDetails()
+
+
+
+http://localhost:8765/message-service/fetchMessage (x) 
+
+http://localhost:8765/promotion/buy-items/10/discount/2
+http://localhost:8765/promotion/buy-items/20/discount/5
+http://localhost:8765/promotion/buy-items/24/discount/5
+http://localhost:8765/promotion/buy-items/10/discount/2
+http://localhost:8765/promotion/buy-items/10/discount/2
+http://localhost:8765/promotion/buy-items/10/discount/2
+
+
+
+
+@Cconfiguration
+@PropertyResource("classpath:application.properties")
+
+server.port=9090
+```
+public String hi() {
+
+    // i want to see 9090 here from application properties 
+
+}
+
+```
+
+> localhost:9009/actuator/health
+
+
+1. in gateway configure in such a way that the service name need not be sent 
+2. have your dependies of eureka client, swagger, in mongo service which was written 
+3. write 1 method which shall show the port number of the instance running 
+4. create 2 instances of any microserivce which you have -Dserver.port=9091 & see the port numbers coming, check to see LB is working 
 
 *** 
 
