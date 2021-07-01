@@ -1936,9 +1936,45 @@ String fooResourceUrl  = "http://localhost:8080/spring-rest/foos";
 ResponseEntity<String> response  = restTemplate.getForEntity(fooResourceUrl + "/1", String.class);
 
 ```
-*** 
+
+> OpenFeign instead fo rest template 
+
+
+
+>1000000000 ->(zipkin)  User -> api-gateway (101) -> eureka (101) -> message-service (101) -> message-details-service
+
+
+> spring boot 
+
+> Netflix OSS Tools 
 
 *** 
+
+### Eureka Server
+> https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.8.RELEASE&packaging=jar&jvmVersion=11&groupId=com.company&artifactId=eureka-server&name=eureka-server&description=Demo%20project%20for%20Spring%20Boot&packageName=com.company.eureka.server&dependencies=web,devtools,cloud-eureka-server 
+
+ ### Gateway
+ > https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.8.RELEASE&packaging=jar&jvmVersion=11&groupId=com.company&artifactId=api-gateway&name=api-gateway&description=Demo%20project%20for%20Spring%20Boot&packageName=com.company.api.gateway&dependencies=web,devtools,cloud-eureka,cloud-gateway
+
+### Message-Service 
+> https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.8.RELEASE&packaging=jar&jvmVersion=11&groupId=com.company&artifactId=message-service&name=message-service&description=Demo%20project%20for%20Spring%20Boot&packageName=com.company.message.service&dependencies=web,devtools,cloud-eureka,cloud-feign
+
+### Message-Details-Service
+https://start.spring.io/#!type=maven-project&language=java&platformVersion=2.4.8.RELEASE&packaging=jar&jvmVersion=11&groupId=com.company&artifactId=message-details-service&name=message-details-service&description=Demo%20project%20for%20Spring%20Boot&packageName=com.company.message.details.service&dependencies=web,devtools,cloud-eureka
+
+*** 
+
+
+| Service Name                               | Port Number | Links                                                                      |
+| ------------------------------------------ | ----------- | -------------------------------------------------------------------------- |
+| Eureka                                     | 8761        | http://localhost:8761                                                      |
+| API Gateway                                | 8765        |
+| Message Service (Eureka Client, OpenFeign) | 9090 - 9095 | http://localhost:9090/message, http://localhost:9090/feign/message-details |
+| Message Detail Service                     | 9050 - 9050 | http://localhost:9050/message-details                                      |
+
+
+
+
 
 *** 
 
