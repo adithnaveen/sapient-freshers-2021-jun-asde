@@ -1885,6 +1885,57 @@ DELETE /resources/{resourceId} - delete 1
 
 *** 
 
+# DAY 14 
+
+Primary Key - Uniq + Not Null + Index 
+
+{
+    _id:  info 
+    qid:< unique > - yes 
+}
+
+> a 4-­‐byte value representing the seconds since the Unix  epoch,
+> a 3-­‐byte machine identiﬁer,
+> a 2-­‐byte process id, and
+> a 3-­‐byte counter, starting with a random value.
+
+
+we can create a index - to speed up + (sparse index, uniq, text, 2d, 2dsphere)
+
+
+{
+    id:101, 
+}
+
+> Micro services overview
+> Architecture
+> Use cases and implementation
+> Do's and Dont's
+> Netflix OSS - Eureka/Ribbon/Zipkin/Hystrix
+> API gateway
+
+
+
+> spring boot always refer to   project 
+- application.properties 
+  - User 
+  - Login 
+  - Question 
+  - Rank 
+  - 
+
+
+> latency 
+> Turn around time 
+
+*** 
+> to call - one service to another service we can use rest template 
+```
+RestTemplate restTemplate = new RestTemplate();
+String fooResourceUrl  = "http://localhost:8080/spring-rest/foos";
+ResponseEntity<String> response  = restTemplate.getForEntity(fooResourceUrl + "/1", String.class);
+
+```
 *** 
 
 *** 

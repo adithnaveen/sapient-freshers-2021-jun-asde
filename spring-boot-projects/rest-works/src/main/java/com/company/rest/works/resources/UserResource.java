@@ -6,6 +6,8 @@ import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.company.rest.works.exception.UserNotFoundException;
@@ -27,6 +29,11 @@ public class UserResource {
 		return userService.getAllUsers();
 	}
 
+	@PostMapping(value = "/users")
+	public User saveUser(@RequestBody User user) {
+		return userService.saveUser(user);
+	}
+
 	@GetMapping(value = "/users/{id}")
 	public User getUser(@PathVariable("id") Integer id) {
 
@@ -37,27 +44,15 @@ public class UserResource {
 		}
 		return new User();
 	}
-	
-	
+
 	@GetMapping(value = "/users/obj/{id}")
 	public User getUserAsObject(@PathVariable("id") Integer id) throws UserNotFoundException {
 		var user = userService.getUserByIdAsObject(id);
-		
-		if(user == null) {
-			throw new UserNotFoundException("user Not Found with id:  " + id ) ;
+
+		if (user == null) {
+			throw new UserNotFoundException("user Not Found with id:  " + id);
 		}
-		
-		return user; 
+
+		return null;
 	}
-	
 }
-
-
-
-
-
-
-
-
-
-

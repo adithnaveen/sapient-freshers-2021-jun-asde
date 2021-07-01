@@ -4,8 +4,11 @@ import java.util.Date;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.hateoas.RepresentationModel;
 
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -13,7 +16,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 //@AllArgsConstructor
-public class User {
+public class User  {
 
 	@Id
 	private Integer id;
@@ -21,7 +24,9 @@ public class User {
 	private double income; 
 	private Date dob;
 	
-	public User(Integer id, String name, double income, Date dob) {
+	@JsonCreator
+	public User(@JsonProperty("id") Integer id, @JsonProperty("name") String name, 
+			@JsonProperty("income") double income, @JsonProperty("dob") Date dob) {
 		super();
 		this.id = id;
 		this.name = name;
