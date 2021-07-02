@@ -2084,6 +2084,21 @@ try{
 
 *** 
 
+> mock(List.class); 
+
+
+- if i want to mock implementation 
+- spy(ArrayList.class)
+
+
+
+### To Test application on SpringBoot with Mockito 
+> https://github.com/adithnaveen/baxter-fullstack-sep-2020/blob/master/spring-boot-projects/product-service/src/test/java/com/training/productservice/ProductServiceTest.java
+
+> https://github.com/adithnaveen/baxter-fullstack-sep-2020/blob/master/spring-boot-projects/product-service/src/test/java/com/training/productservice/ProductHttpRequestTest.java
+
+> https://github.com/adithnaveen/baxter-fullstack-sep-2020/blob/master/spring-boot-projects/product-service/src/test/java/com/training/productservice/ProductWebLayerTest.java
+
 *** 
 
 
