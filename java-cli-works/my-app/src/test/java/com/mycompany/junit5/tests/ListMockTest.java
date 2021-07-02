@@ -5,6 +5,7 @@ import static org.mockito.Mockito.*;
 
 import java.util.List;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.MethodOrderer.OrderAnnotation;
 import org.junit.jupiter.api.Order;
@@ -45,6 +46,16 @@ class ListMockTest {
 		assertEquals("Aneesha", listMock.get(4));	
 	}
 
+	@Test
+	void mockListWithException() {
+		List<String> listMock = mock(List.class);
+		
+		when(listMock.get(anyInt())).thenThrow(new RuntimeException("Thorwoing mock exception")); 
+		Assertions.assertThrows(RuntimeException.class, () -> listMock.get(0)); 
+	}
+	
+	
+	
 }
 
 

@@ -2033,13 +2033,54 @@ public String hi() {
 
 > localhost:9009/actuator/health
 
-
+### Assignment 
 1. in gateway configure in such a way that the service name need not be sent 
 2. have your dependies of eureka client, swagger, in mongo service which was written 
 3. write 1 method which shall show the port number of the instance running 
 4. create 2 instances of any microserivce which you have -Dserver.port=9091 & see the port numbers coming, check to see LB is working 
 
 *** 
+
+
+
+<img src="./images/spring-micro-services-drawio.png" width="400">
+
+# Day15 
+
+> Spring security - jwt 
+> Testing and mockito
+> Spring boot actuator
+
+
+
+```
+
+### session validation 
+
+
+<%
+try{
+	if(!((LoginBean)session.getAttribute("LOGIN")).getSessionId().equals(request.getSession().getId())){
+		request.getRequestDispatcher("LoginError.jsp").forward(request, response);
+	}
+}catch(NullPointerException npe){
+	npe.printStackTrace();
+	 %>
+	<jsp:forward page="LoginError.jsp"/>
+	<%
+	
+}
+%> 
+
+```
+
+> JWT 
+> OAUTH 2.0 - inter application authentication 
+
+- claims 
+
+> Authorization - UserType (User/Admin/Manager)
+> Authentication - management of session was /JWT 
 
 *** 
 
