@@ -2268,9 +2268,56 @@ Twitter
 
 
 12 Grids (xsm, sm, md, lg, xlg)
- < 12  never > 12 
+ < 12 (OK) - dont have  > 12 
 
- 
+
+## Project Discussion 
+
+1. Domain
+2. Tech Stack 
+   1. Spring Boot 
+   2. Micro Service Arch 
+   3. Netflix OSS 
+   4. mongodb 
+   5. postgress 
+   6. Selenium 
+   7. Cucumber 
+   8. ELK 
+   9. Docker 
+   10. Jenkins 
+   11. jUnit
+   12. jMeter 
+   13. Redis 
+   14. Kafka 
+   15. ReactJS 
+   16. MS Teams 
+   17. terraform (PAAS)
+   18. Ansible / Chef / Puppet 
+   19. SonarQube + Sapinet SonarQube
+   20. Cloud AWS 
+3. logistics 
+   1. 32 Gigs Application server 
+   2. 16 Gigs Application server 
+   3. S3 For static site 
+   4. domain name 
+   5. Mongo Repo 
+   6. creating POD
+   7. DOD, DOR 
+   8. hub.docker.com 
+   9. 
+
+
+****
+- by 12/July/2021
+- Spring Microserivces Multi Module project  
+  - with Hello World 
+  - connected with mongoDB 
+  - Docerize 
+  - ++ Build it with Jenkins 
+
+23 Pax  /6
+
+
 *** 
 *** 
 *** 
