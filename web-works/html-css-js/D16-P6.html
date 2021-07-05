@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: cadetblue;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+        .common {
+            width: 100px;
+            height: 100px;
+        }
+
+        .small {
+            display: block;
+            width: 100px;
+            height: 100px;
+        }
+
+        .big {
+            display: none;
+        }
+
+        h1 {
+            font-size: smaller;
+        }
+
+
+        /* tablet / pad */
+        @media screen and (min-width:501px) and (max-width:1000px) {
+            .common {
+                width: 150px;
+                height: 150px;
+            }
+
+            .small {
+                display: block;
+                width: 150px;
+                height: 150px;
+            }
+
+            .big {
+                display: none;
+            }
+
+            h1 {
+                font-size: medium;
+                color: blue;
+            }
+
+        }
+
+        /* desktop */
+        @media screen and (min-width:1011px) {
+            .common {
+                width: 250px;
+                height: 250px;
+            }
+
+            .small {
+                display: none;
+            }
+
+            .big {
+                display: block;
+                width: 300px;
+                height: 300px;
+            }
+
+            h1 {
+                font-size: larger;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>HEADER 1</h1>
+
+    <div class="common-images">
+        <img src="./assessts/puppy.jpg" alt="dog image" class="common">
+        <img src="./assessts/fireworks.jpg" alt="fireworks" class="common">
+    </div>
+
+    <div class="big">
+        <h1>FOR Big Screen</h1>
+        <img src="./assessts/tampa.jpg" alt="tampa">
+    </div>
+
+
+    <div class="small">
+        <h1>FOR Small Screen</h1>
+        <img src="./assessts/cat.png" alt="cat">
+    </div>
+
+
+
+</body>
+
+</html>

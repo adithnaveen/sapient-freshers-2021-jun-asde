@@ -2099,6 +2099,182 @@ try{
 
 > https://github.com/adithnaveen/baxter-fullstack-sep-2020/blob/master/spring-boot-projects/product-service/src/test/java/com/training/productservice/ProductWebLayerTest.java
 
+
+
+```
+
+
+@Repository 
+public interface UserRepository extends MongoRepository<User, Integer> {}
+
+@Service
+public class HomeService {
+    @AutoWirrd
+    private UserRepository repo; 
+
+    
+    public String sayGreet() {
+        return "Hello World"; 
+    }
+
+    public User getUser(int id) {
+        retrun repo.findUserById(id).get();     
+    }
+
+}
+
+
+@Controller
+public class HomeController {
+
+    @AutoWired 
+    private HomeService service; 
+
+	@RequestMapping("/")
+	public @ResponseBody String greeting() {
+		return service.sayGreet();
+	}
+    @RequestMapping("/{id}")
+	public @ResponseBody String getUser(@PathVariable("id") int id) {
+		return service.getUser();
+	}
+
+}
+```
+*** 
+# Day16 
+
+> UI/UX
+> JS, TS 
+> React
+> React Hooks 
+> React Reduxt 
+
+
+
+- html structure 
+
+
+```
+    
+<html>
+    <head>
+        all the meta information 
+    </head>
+    <body>
+    <div id="nav>
+        // your navigator here 
+    </div>
+    <div id="header1">
+        <h1>MyHeader</h1>
+    </div>
+    
+    <div id="header2">
+        <h2>MyHeader</h2>
+    </div>
+
+    <nav>
+    </nav>
+    <header>
+        <h1>MyHeader</h1>
+    </header>
+
+
+    </body>
+ 
+
+</html>
+```
+
+- SEO - HTML Semantics - Position 
+  - Google / MSN / YAHOO/ BING / REDIFF 
+- DOM - Document Object Model 
+- BOM - Browser object model 
+
+- table / span / div 
+
+
+
+- header 
+- nav
+- section
+- p
+- article
+- footer 
+- summary 
+- details 
+- aside 
+- 
+
+- WIA ARIA 
+- AA 
+- AAA 
+- 508 USA Standard 
+
+
+
+Tools 
+> lighthouse 
+> axw 
+> wave 
+
+
+compliant 
+> mobile 
+> tablet 
+> desktop/laptop 
+
+```
+    // desktop first desk.css 
+
+    h1 {
+        color:blue;
+        font-family:arial;
+        column-cont:3; 
+        font-weight:36px;
+    }
+
+    // if i want for mobile compliant mobile.css 
+
+
+    h1 {
+        color:blue;
+        column-cont:none;
+        font-wdith:12px;
+    }
+
+// mobile first approach 
+  h1 {
+        color:blue;
+        font-family:arial;
+        font-wdith:12px;
+    }
+
+// on desktop 
+h1 {
+ font-wdith:36px;
+ column-count:4
+}
+
+```
+
+
+> responsive  - not building it 
+> adaptive - only here 
+
+
+Twitter 
+> bootstrap 
+
+
+12 Grids (xsm, sm, md, lg, xlg)
+ < 12  never > 12 
+
+ 
+*** 
+*** 
+*** 
+*** 
 *** 
 
 

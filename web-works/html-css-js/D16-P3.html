@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#videos>video {
+            height: 200px;
+        }
+
+        p {
+            display: none;
+        }
+
+        div:hover p {
+            display: block;
+            background-color: burlywood;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            color: purple;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1:hover {
+            font-size: 35px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: blue;
+            background-color: aqua;
+        }
+    </style>
+
+    <script>
+        function init() {
+            let videos = document.querySelectorAll("div#videos>video");
+
+
+            videos.forEach(function (v) {
+                v.onmouseover = function () {
+                    v.play();
+                }
+                v.onmouseout = function () {
+                    v.pause()
+                }
+            })
+        }
+
+        window.onload = init;
+    </script>
+
+</head>
+
+<body>
+    <h1>HTML5 With Videos</h1>
+    <p>This is para outside the div</p>
+    <div>
+        HOVER ON ME
+        <p>This is para inside the div</p>
+    </div>
+    <div id="videos">
+        <video src="./assessts/billy.mp4" type="video/mp4">
+            <track label="English Sub titles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video Rendering is not supported on your browser</h3>
+        </video>
+        <video src="./assessts/baby-and-dog.mp4" type="video/mp4">
+            <track label="English Sub titles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video Rendering is not supported on your browser</h3>
+        </video>
+
+        <video src="./assessts/burningtruck.mp4" type="video/mp4">
+            <track label="English Sub titles" kind="subtitles" srclang="en" src="">
+            </track>
+            <h3>Video Rendering is not supported on your browser</h3>
+        </video>
+
+
+
+    </div>
+</body>
+
+</html>

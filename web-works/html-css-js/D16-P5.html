@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        h1:hover {
+            color: black;
+            background-color: bisque;
+            transition: all 700ms ease-in-out;
+        }
+
+
+        .mydiv {
+            column-count: 4;
+            column-rule: 2px solid black;
+            column-gap: 50px;
+            text-align: justify;
+            padding: 40px;
+        }
+
+        #list1 {
+            width: 200px;
+        }
+
+        #list1 li {
+            list-style: none;
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+
+        #list1 li:first-child {
+            border-radius: 10px 10px 0px 0px;
+            border-top: 5px solid black;
+        }
+
+        #list1 li:last-child {
+            border-radius: 0px 0px 10px 10px;
+            border-bottom: 5px solid black;
+        }
+
+        #list1 li:hover {
+            background-color: rgba(38, 204, 52, .8) !important;
+        }
+
+        #list1 li:nth-child(even) {
+            background-color: rgba(137, 204, 209, 0.8);
+        }
+
+        .active-list {
+            background-color: rgba(50, 52, 218, 0.8);
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+        #tampa1:hover {
+            transform: scale(1.5);
+            transition: all 1s ease-in-out;
+        }
+
+        #tampa2:hover {
+            transform: rotateX(40deg) rotateY(45deg) scale(1.3);
+            transition: all 1s ease-in-out;
+        }
+
+        #tampa3:hover {
+            transform: rotateX(40deg) rotateY(45deg) scale(1.3);
+            transition: all 1s ease-in-out;
+            opacity: .2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Header One </h1>
+
+    <div class="mydiv">
+
+        <p>
+            Microsoft Corporation is an American multinational technology company which produces computer software,
+            consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers.
+            Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of
+            touchscreen
+            personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest United States
+            corporations by total revenue;[3] it was the world's largest software maker by revenue as of 2016.[4] It is
+            considered one of the Big Five companies in the U.S. information technology industry, along with Google,
+            Apple,
+            Amazon, and Facebook.
+        </p>
+        <p>
+            Microsoft Corporation is an American multinational technology company which produces computer software,
+            consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers.
+            Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of
+            touchscreen
+            personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest United States
+            corporations by total revenue;[3] it was the world's largest software maker by revenue as of 2016.[4] It is
+            considered one of the Big Five companies in the U.S. information technology industry, along with Google,
+            Apple,
+            Amazon, and Facebook.
+        </p>
+        <p>
+            Microsoft Corporation is an American multinational technology company which produces computer software,
+            consumer
+            electronics, personal computers, and related services. Its best known software products are the Microsoft
+            Windows line of operating systems, the Microsoft Office suite, and the Internet Explorer and Edge web
+            browsers.
+            Its flagship hardware products are the Xbox video game consoles and the Microsoft Surface lineup of
+            touchscreen
+            personal computers. Microsoft ranked No. 21 in the 2020 Fortune 500 rankings of the largest United States
+            corporations by total revenue;[3] it was the world's largest software maker by revenue as of 2016.[4] It is
+            considered one of the Big Five companies in the U.S. information technology industry, along with Google,
+            Apple,
+            Amazon, and Facebook.
+        </p>
+    </div>
+
+    <hr>
+
+    <ol type="a">
+        <li>List Index 1 </li>
+        <li>List Index 2 </li>
+        <li>List Index 3 </li>
+        <li>List Index 4 </li>
+        <li>List Index 5 </li>
+    </ol>
+
+
+    <ul id="list1">
+        <li>List Index 1 </li>
+        <li>List Index 2 </li>
+        <li>List Index 3 </li>
+        <li>List Index 4 </li>
+        <li class="active-list"> List Index 5 </li>
+    </ul>
+
+
+    <hr>
+
+    <img src="./assessts/tampa.jpg" alt="Tampa" id="tampa1">
+    <img src="./assessts/tampa.jpg" alt="Tampa" id="tampa2">
+    <img src="./assessts/tampa.jpg" alt="Tampa" id="tampa3">
+    <img src="./assessts/tampa.jpg" alt="Tampa" id="tampa4">
+
+</body>
+
+</html>

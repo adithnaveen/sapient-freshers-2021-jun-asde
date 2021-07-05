@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+
+            /* top right bottom left  */
+            margin: 10px 20px 10px 5px;
+            border: 1px solid black;
+            display: inline-block;
+        }
+
+        #d1 {
+            border-radius: 20px;
+            box-shadow: -10px -7px 5px red;
+            margin-left: 70px;
+        }
+
+        #d2 {
+            width: 300px;
+            box-shadow: -10px -7px 5px cyan;
+            background-image: url(./assessts/cake.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        #d3 {
+            box-shadow: 10px 7px;
+            border-width: 20px;
+            border-image: url(./assessts/border_image_1.png) 10% stretch;
+            /* -moz-border-image: url(./assessts/border_image_1.png) 10% stretch;
+            -webkit-border-image: url(./assessts/border_image_1.png) 10% stretch; */
+        }
+
+        #d4 {
+            background-image: linear-gradient(to right, red, blue);
+        }
+
+
+        #d5 {
+            background-image: linear-gradient(to right, red, blue, violet);
+        }
+
+        #d6 {
+            background-image: radial-gradient(red, yellow)
+        }
+
+        #d7 {
+            background-image: radial-gradient(red, yellow, violet)
+        }
+
+        #tampa {
+            border-radius: 30%;
+            box-shadow: 10px 7px 20px red;
+        }
+
+        #tampa:hover {
+            border-radius: 40%;
+            box-shadow: 10px 7px 20px blue;
+        }
+
+
+        .content-box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 10px;
+        }
+
+
+        h1 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS3 Demo</h1>
+    <div class="box" id="d1"></div>
+    <div class="box" id="d2"></div>
+    <div class="box" id="d3"></div>
+    <div class="box" id="d4"></div>
+    <div class="box" id="d5"></div>
+    <div class="box" id="d6"></div>
+    <div class="box" id="d7"></div>
+
+    <hr>
+    <div class="content-box">
+        On November 17, 2016, Publicis Sapient announced SapientNitro was merging with sister agency Razorfish to form
+        SapientRazorfish, which would be led by former SapientNitro CEO Alan Wexler. Publicis. At the time, Sapient
+        consisted of both SapientRazorfish and Sapient Consulting, and was co-led by Alan Wexler and Sapient Consulting
+        CEO Chip Register.[5]
+
+        On February 13, 2019, SapientRazorfish and Sapient Consulting were merged into one brand, Publicis Sapient,[6]
+        led by Nigel Vaz, who was appointed CEO the prior week
+    </div>
+
+    <hr>
+    <img src="./assessts/tampa.jpg" alt="Tampa" id="tampa">
+
+</body>
+
+</html>
