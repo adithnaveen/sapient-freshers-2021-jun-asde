@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script type="text/javascript">
+        outVar = 100;
+        function function1() {
+            let name = prompt("Enter your name ");
+            let age = parseInt(prompt("Enter your age", "18"));
+
+            let val = "";
+            if (age > 18) {
+                val = "You Can Vote Mr/Ms/Mrs: " + name;
+            } else {
+                val = "You cannot vote  + Mr / Ms / Mrs: " + name + " Please wait for " + (18 - age) + " years";
+            }
+
+            document.getElementById("mydiv").innerHTML = val;
+        }
+
+
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        // prototype (public ) function
+        Person.prototype.display = function () {
+            console.log("Name : " + this.name + ", age : " + this.age)
+        }
+
+        // in javascript there is not overloading 
+        // in javascript if you have a function without any parameters still you can pass parameters 
+        function sample(val) {
+            console.log("sample()" + val);
+        }
+
+        function sample() {
+            console.log("-----------sample()-------------------")
+            console.log(sample.arguments.length);
+
+            for (let temp = 0; temp < sample.arguments.length; temp++) {
+                console.log("Arg: " + sample.arguments[temp]);
+            }
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <button onclick="function1()">Function 1</button>
+
+    <div id="mydiv"></div>
+
+    <script>
+        p = new Person("sajana", 21);
+        p.display();
+
+        sample();
+        sample(10);
+        sample(20);
+        sample("hello", "how", "are", "you");
+
+    </script>
+</body>
+
+</html>

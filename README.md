@@ -2315,10 +2315,38 @@ Twitter
   - Docerize 
   - ++ Build it with Jenkins 
 
-23 Pax  /6
+23 Pax/6
 
 
 *** 
+
+# Day17 
+
+- val =100; this becomes global 
+- var val = 100;  -out side the function then it will become global, inside the function its local, but global in the function 
+- let - local to the instance block 
+- const - local to the instance block  and once assigned you cannot change the value 
+
+1. const 
+2. let 
+3. var 
+4. without any type 
+
+```
+class Person {
+    private int age; 
+    private String name; 
+
+    void display() {
+        ///
+    }
+}
+```
+
+
+### Promise - The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+
 *** 
 *** 
 *** 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        function getUsers() {
+            let URL = "https://jsonplaceholder.typicode.com/users";
+            fetch(URL)
+                .then(resp => resp.json())
+                .then(data => {
+                    // console.log(data);
+                    let str = "";
+                    str = "<table broder='2'>";
+
+                    str = str.concat(
+                        data.map(user => {
+                            return "<tr><td>" +
+                                user.username.toUpperCase() + "</td><td>" +
+                                user.email
+                                + "</td></tr>"
+                        }))
+
+                    str.concat("</table>");
+                    return str;
+                }).then(renderString =>
+                    document.getElementById("mydiv").innerHTML = renderString
+                ).catch(err => console.log("Err : " + err));
+        }
+
+    </script>
+</head>
+
+<body>
+    <button onclick="getUsers()">Get Users</button>
+
+    <div id="mydiv">
+
+    </div>
+
+</body>
+
+</html>
