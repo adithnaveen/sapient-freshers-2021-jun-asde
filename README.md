@@ -2347,6 +2347,31 @@ class Person {
 ### Promise - The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
 
 
+
+```
+    // it can store anything and everything  
+    ArrayList list = new ArrayList(); 
+    list.add("hi");
+    list.add(true);
+    list.add(new Object());
+    list.add(null);
+    list.add(new World());
+
+    let x = ???; 
+
+    ArrayList<String> list = new ArrayList<String>(); 
+```
+
+- ducktyping 
+
+#### Who will support 
+- JavaScritp Support  (x)
+- es6 support (x)
+- typescript (yes)
+
+
+
+
 *** 
 *** 
 *** 
