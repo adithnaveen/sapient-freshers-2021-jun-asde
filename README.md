@@ -2378,11 +2378,39 @@ Does Duck Quack
 
 ### Images in class 
 
-<img src="./images/17-js-ts.drawio.png" width="400>
+<img src="./images/17-js-ts.drawio.png" width="400">
 
 *** 
-<img src="./images/17-ui-mvc-mvp-mvvm.drawio.png" width="400>
+<img src="./images/17-ui-mvc-mvp-mvvm.drawio.png" width="400">
 *** 
+
+# Day18
+
+- Form Team 
+- TDD -Javascript 
+- Introduction to React 
+
+
+### Project Discussion 
+
+- You payment on line you get points 
+  - Rule based enginee 
+- product 
+- product details 
+- reports 
+- login 
+- registration
+- 
+
+- Understnding NODE 
+- Node is WebServer 
+- Node JS is written in JS 
+- runs on V8 enginee - chrome, edge 
+- Node runs on single threaded 
+
+
+
+
 *** 
 *** 
 
