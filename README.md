@@ -2370,9 +2370,18 @@ class Person {
 - typescript (yes)
 
 
+Does Duck Quack 
+    - feathers 
+    - swim 
+    - white in color 
 
+
+### Images in class 
+
+<img src="./images/17-js-ts.drawio.png" width="400>
 
 *** 
+<img src="./images/17-ui-mvc-mvp-mvvm.drawio.png" width="400>
 *** 
 *** 
 *** 
