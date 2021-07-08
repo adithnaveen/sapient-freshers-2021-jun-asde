@@ -1,4 +1,4 @@
-const {generateText, checkAndGenerateText, createElement} = require("../script/util")
+const {generateText, testSample} = require("../script/util")
  
 
 describe('unit testing for the functions written to put data', () => {
@@ -20,5 +20,14 @@ describe('unit testing for the functions written to put data', () => {
             
         })
 
+        describe('this is for testing sample code', () => {
+            test("should return the proper value provided username and city ", () =>{
+                let name  ="Praduman"; 
+                let city = "Chennai";
+                let expectedResult = `${name} is from ${city}`; 
+                expect(testSample(name, city)).toBe(expectedResult);
+            })
+        })
+        
 
 })

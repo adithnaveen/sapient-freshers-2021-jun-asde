@@ -1,10 +1,12 @@
 exports.generateText =(name, age) => {
     return `${name} is ${age} years old`
 }
+  
+
+
 
 // notEmpty isString 
-exports.validateInput =(text, notEmpty, isNumber) => {
-    console.log(typeof text);
+exports.validateInput =(text, notEmpty, isNumber) => {    console.log(typeof text);
     if(!text) {return false;}
     // check only for spaces & Text 
     if(notEmpty && text.trim().length ===0) {return false;}
@@ -32,3 +34,9 @@ exports.createElement = (type, text, className) => {
     element.textContent = text; 
     return element;
 }
+
+
+exports.testSample = (name, city) => {
+    return `${name} is from ${city}`
+}
+

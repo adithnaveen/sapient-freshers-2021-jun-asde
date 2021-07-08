@@ -15,9 +15,6 @@ const {generateText, checkAndGenerateText, createElement} = require("../script/u
                 let outputText = `${name} is ${age} years old`
                 
                 let element  = createElement("li", outputText, "user-item"); 
-
-                // console.log("---" ,  element);
-                // expect(element).not.toBeNull()
-                // expect(element).toBeTruthy();
+ 
             })
         })
