@@ -65,3 +65,18 @@ Javascript Usages
 Java Script 
 > https://javascript.info/
 
+React Deployment 
+> https://create-react-app.dev/docs/deployment/
+
+
+React Life Cycle
+> https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+
+React Atom - Molecule Design Pattern 
+> https://medium.com/@janelle.wg/atomic-design-pattern-how-to-structure-your-react-application-2bb4d9ca5f97
+ 
+> https://atomicdesign.bradfrost.com/chapter-2/
+
+
+

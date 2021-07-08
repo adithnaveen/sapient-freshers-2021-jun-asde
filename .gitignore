@@ -10,6 +10,8 @@
 # eclipse files 
 /**/.settings/
 
+/**/node_modules
+
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/

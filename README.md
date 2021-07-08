@@ -2408,6 +2408,228 @@ Does Duck Quack
 - runs on V8 enginee - chrome, edge 
 - Node runs on single threaded 
 
+T1 - 1000 
+T2 - 345 
+T3 - 476
+T4 - 90
+
+> QT - 50 ms 
+
+> 2/3 of the memory is not effectively used 
+
+> node sample.js 
+> 
+
+
+#### JEST 
+
+
+```
+describe("some story", () => {
+
+    test("your story", ()=> {
+        // asserts 
+    })
+    test("your story", ()=> {
+        // asserts 
+    })
+
+}) 
+
+describe("some story", () => {
+
+    test("your story", ()=> {
+        // asserts library -  chaijs (assert, should, etc) (mocha)
+    })
+    test("your story", ()=> {
+        // asserts 
+    })
+        describe("some story", () => {
+
+            test("your story", ()=> {
+                // asserts 
+            })
+            test("your story", ()=> {
+                // asserts 
+            })
+
+        }) 
+}) 
+```
+
+
+## working with reactjs 
+
+```
+
+<script>
+    document.getElementById("resource1).innerHTML ="something"
+</script>
+
+<body> -> index.html 
+    <div id="header"></div>  -- critical path 
+    <div id="main">
+        <div id="resource1">
+            /// data, process the data, attach CSS to data, then render - DOM ->  VDOM
+        </div>
+        <div id="resource2"></div>
+        <div id="resource3"></div>
+        <div id="resource4"></div>
+    </div>
+    <div id="footer"></div>
+</body>
+
+```
+
+```
+    <Btn name="something"/>
+```
+
+- in reactJS - Stateful - class based - will have life cycles - overriden mehtods - with hit to end point -
+  - From REST 
+- in reactJS - Stateless - functions 
+  - Hooks 
+- 
+
+*** 
+> instead of npm -> yarn 
+
+> npx create-react-app react-app 
+
+> npm start
+    - Starts the development server.
+    - they start node server - 3000 
+    - hot server 
+    - css 
+    - js 
+    - webpack 
+
+  yarn build
+    Bundles the app into static files for production.
+
+  yarn test
+    Starts the test runner.
+
+  yarn eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+We suggest that you begin by typing:
+
+  cd react-app
+  yarn start
+
+
+*** 
+
+# Day 19 
+
+Diffrences 
+- Stateless 
+  
+  ```
+    export default function MyApp(props) {
+        return(
+            <div></div>
+        )
+    }
+  ```
+
+- Statefull 
+
+    ``` 
+        -> props, context 
+        class MyApp extends Component {
+            state:{}
+            render(){
+                log(props)
+                // to fetch and process 
+                return (
+                    <div>{somedata}</div>
+                )
+            }
+        }
+    ```
+
+
+
+Form handling 
+1. uncontrolled components ( deprecated now)
+2. Controlled components - state 
+
+```` 
+<form onSubmit={this.handleSubmit}>
+        <label>
+          Name:
+          <input type="text" name={this.state.name} />
+        </label>
+        <input type="submit" value="Submit" />
+      </form>
+
+````
+
+```
+<button class="btn btn-primary" onclick={this.somefunction}>Title </button>
+
+<MyComponent class="btn btn-primary" handler={{this.somefunction}} caption="Title">
+
+
+const Button =() => {}
+const InputText =() => {}
+const Password =() => {}
+const CheckBox =() => {}
+
+const Form = () => {
+    return(
+        <div>
+            <InputText />
+            <Password />
+            <Button />
+        </div>
+    )
+}
+
+const Form2 = () => {
+    return(
+        <div>
+            <InputText />
+            <Password />
+            
+        </div>
+    )
+}
+
+const Page = () => {
+
+    return(
+        <div>
+            <Form />
+            <Form2 />
+        </div> 
+    )
+
+}
+
+
+
+```
+*** 
+
+
+
+
+
+*** 
+*** 
+
+
+
+
+
+*** 
+*** 
+
+
 
 
 
