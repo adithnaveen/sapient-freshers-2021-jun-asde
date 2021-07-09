@@ -2,21 +2,32 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <meta name="description" content="Web site created using create-react-app" />
-  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-
-  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
 
   <title>React App</title>
 </head>
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+
+  <div class="container">
+    <h1>Redux Demo</h1>
+
+    <div class="row">
+      <div class="col alert alert-info">
+        <form id="formName">
+          <input type="text" name="name" id="name" class="form-control">
+          <button class="btn btn-primary">Add</button>
+        </form>
+      </div>
+      <div class="col alert alert-warning">
+        <h3>List Of Name</h3>
+        <ul id="namesList" class="list-group">
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
 
 </body>
 

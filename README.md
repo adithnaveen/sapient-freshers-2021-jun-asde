@@ -2610,13 +2610,17 @@ const Page = () => {
 
 }
 
-
-
 ```
+
+<img src="./images/19-react-forms.drawio.png" width="400">
+
+
 *** 
 
+# Day 20 
 
 
+> React HOC - Higher Order Component 
 
 
 *** 
