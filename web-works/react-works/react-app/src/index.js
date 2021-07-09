@@ -47,7 +47,13 @@ document.getElementById("formName").onsubmit = submitHandler;
 
 const updateList = () => {
     let names = store.getState(); // returns an array of names 
-    let list = names.map((name, index) => '<li class="list-group-item" value='+index+'>'+name+'<button class="btn btn-danger">X</button></li>'); 
+    let list = names.map((name, index) => 
+        '<li class="list-group-item" value='
+            +index+'>'
+            +name+'<button onclick="deleteName('
+            +index+')" class="btn btn-danger">X</button></li>'); 
+
+
     let listItem = list.join();
     document.getElementById("namesList").innerHTML = listItem;
 }
@@ -55,5 +61,12 @@ const updateList = () => {
 // to show when you load the application
 updateList();
 store.subscribe(updateList); 
+
+
+window['deleteName'] = (index) => {
+    const action = {type:'DELETE_NAME', data: index}; 
+    store.dispatch(action); 
+  }
+  
 
 
