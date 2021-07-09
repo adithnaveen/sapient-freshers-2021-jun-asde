@@ -20,11 +20,13 @@ class App extends Component {
     render() {
         return (
             <div className="container">
-                <div className="row col">
-                    Contact Form
-                </div>
-                <div className="row col">
-                    <ContactList contacts={this.state.contacts} />
+                <div className="row">
+                    <div className="col">
+                        Contact Form
+                    </div>
+                    <div className="col">
+                        <ContactList contacts={this.state.contacts} />
+                    </div>
                 </div>
             </div>
         );
