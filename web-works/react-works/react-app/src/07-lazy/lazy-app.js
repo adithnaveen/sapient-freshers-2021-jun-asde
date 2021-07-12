@@ -11,14 +11,14 @@ import Home from './home';
 const Hello = React.lazy(() => import("./hello")); 
 const Sample = React.lazy(() => import("./sample")); 
 const NotFound = React.lazy(() => import("./not-found")); 
-
+const Loading = React.lazy(()=> import("./hoc")); 
 
 
 const App =() => {
     return(
         <div>
              <Router>
-                 <Suspense fallback ={<div>Loding Please Wait... </div>}>
+                 <Suspense fallback ={() => <Loading /> }>
                  <Switch>
                      <Route path="/" exact={true}>
                          <Home /> 
