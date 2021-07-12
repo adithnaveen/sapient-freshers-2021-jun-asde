@@ -2699,6 +2699,71 @@ reducer = (state = initialState, action) => {
 > http://localhost:3000/contact-details/2
 > http://localhost:3000/contact-details/3
 > http://localhost:3000/contact-details/4
+
+```
+class MyComopnent extends Component{
+    state={key:val}
+    componentDidMount(){ <- side effect works 
+        fetch
+    }
+    render(){return <></>}
+
+}
+```
+
+const MyComponent = () => {
+    useState <- will maintain the state 
+    useEffect  <- help to get the data (side effect work)
+    return(){<></>}
+}
+
+
+
+> 16.8 hooks 
+
+
+```
+import React, { useState } from 'react';
+
+function Example() {
+  // Declare a new state variable, which we'll call "count"
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>You clicked {count} times</p>
+      <button onClick={() => setCount(count + 1)}>
+        Click me
+      </button>
+    </div>
+  );
+}
+```
+
+```
+  // Similar to componentDidMount and componentDidUpdate:
+
+useEffect(() => {
+    // Update the document title using the browser API
+    document.title = `You clicked ${count} times`;
+  });
+
+```
+
+
+> useEffect(()=>{}) // it will be called implicitly everytime 
+> useEffect(()=>{}, []) // it will be called implicitly but only once 
+> useEffect(()=>{}, [name]) / will be called only for the state "name" 
+
+
+> useState 
+> useEffect 
+> useEffect  + useState = useReducer 
+
+
+
+
+
 *** 
 *** 
 

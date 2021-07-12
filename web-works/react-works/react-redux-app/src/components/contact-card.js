@@ -4,8 +4,6 @@ import {connect} from 'react-redux';
 import {deleteContact} from '../actions/contacts-action'; 
 import {Link} from 'react-router-dom'; 
 
-
-
 const ContactCard = ({contact, deleteContact}) => (
     <div className="card">
         <div className="row">
