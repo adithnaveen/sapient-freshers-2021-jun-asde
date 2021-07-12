@@ -79,4 +79,7 @@ React Atom - Molecule Design Pattern
 > https://atomicdesign.bradfrost.com/chapter-2/
 
 
+React-Redux-Thunk Animated Video 
+> https://redux.js.org/tutorials/fundamentals/part-6-async-logic
+
 

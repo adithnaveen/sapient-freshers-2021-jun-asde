@@ -36,3 +36,9 @@ Content-Type: application/json
     "title": "java-training",
     "author": "Gostling"
 }
+
+###
+
+GET http://localhost:4000/contacts
+Content-Type: application/json
+Accept: application/json

@@ -31,3 +31,6 @@ export const deleteContact =(id ) => async (dispatch)=> {
     dispatch({type:DELETE_CONTACT, data:id});
 }
 
+// write a function to get by id 
+
+

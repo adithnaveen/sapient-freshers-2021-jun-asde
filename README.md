@@ -2623,13 +2623,82 @@ const Page = () => {
 > React HOC - Higher Order Component 
 
 
+Redux Reducer - its a function 
+
+const initialState  = [];
+action.type, action.data
+reducer = (state = initialState, action) => {
+
+    switch(action.type) {
+        case 'ADD_NAME':
+            return [...state,  action.data  ]
+            break; 
+        case 'DELETE_NAME':
+            break; 
+        case 'GET_NAMES':
+            break; 
+        default: 
+            break; 
+
+    }
+}
+
+> React-Redux Connect 
+````
+> function connect(mapStateToProps?, mapDispatchToProps?, mergeProps?, options?)
+````
+
+> npm i bootstrap json-server redux react-redux redux-devtools-extension redux-thunk react-router-dom
+
+ 
+
 *** 
+
+
+# Day 21 
+- Redux 
+- Hooks 
+- Suspense - Lazy Loading - routing 
+- JWT authentication is done 
+
+
+
+> https://github.com/adithnaveen/sapient-freshers-2021-jun-asde/tree/main/images - Browser Routing 
+> https://mail.google.com/mail/u/0/#inbox - hashed routing 
+> https://mail.google.com/mail/u/0/#starred
+> https://mail.google.com/mail/u/0/#drafts
+
+
+
+> http://localhost:3000 -> / 
+> http://localhost:3000 -> /add-contact
+> http://localhost:3000 -> /show-contacts
+
+
 *** 
 
+```
+-- old code 
+   <div className="row">
+        <div className="col">
+          <ContactForm />
+        </div>
+        <div className="col">
+          <ContactList />
+        </div>
+      </div>
 
+```
 
+> http://localhost:3000/#/show-contacts
 
+> http://localhost:3000/add-contact
 
+> https://in.news.yahoo.com/italy-crush-england-dreams-winning-215421919.html
+
+> http://localhost:3000/contact-details/2
+> http://localhost:3000/contact-details/3
+> http://localhost:3000/contact-details/4
 *** 
 *** 
 

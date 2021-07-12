@@ -20,6 +20,11 @@ export default  (state = {contacts:[]}, action) => {
                 }
                 return {...state, contacts};
             }
+        
+            case GET_CONTACT : 
+            
+                return ; 
+            
 
         case FETCH_CONTACTS:
             // {type:"FETCH_CONTACTS"}
