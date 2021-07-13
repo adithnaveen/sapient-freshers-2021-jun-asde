@@ -2761,14 +2761,52 @@ useEffect(() => {
 > useEffect  + useState = useReducer 
 
 
+> CSR - client side rendering 
+> SSR - server side rendering 
 
 
 
 *** 
+
+# Day 22 
+
+- Kafka 
+- Selenium 
+
+<img  src="./images/22-kafka-selenium.drawio.png">
+
+
+
+> ESB - Enterprise Service Bus 
+-  Open MQ - IBM 
+-  Rabbit MQ - Rabbit 
+-  Kafka - LinkedIn -> Apache 
+-  Mule Soft 
+-  Tibco 
+
+- ZooKeeper Port Number - clientPort=2181
+
 *** 
 
+Working with Kafka 
 
-
+- Step 1 - start Zookeeper 
+  - ./zookeeper-server-start.sh ../config/zookeeper.properties 
+- Step 2 - Start Kafka 
+  - ./kafka-server-start.sh ../config/server.properties 
+- Step 3 - Create Topic 
+  -    ./kafka-topics.sh --create --bootstrap-server localhost:9092 --topic first-topic
+  -    ./kafka-topics.sh --create --bootstrap-server localhost:9092 --topic second-topic
+- Step 4 - List the Tipics Created
+  - ./kafka-topics.sh --list --bootstrap-server localhost:9092  
+- Step 5  - Host a producer on Kakfa Server 
+  - ./kafka-console-producer.sh --broker-list localhost:9092  --topic first-topic
+- Step 6 - Host a Kafka Consumer
+  - ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic
+- Step 7 - Host a Kafka Consumer from beginning 
+  - ./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic first-topic --from-beginning
+- Step 8 - to delete a topic 
+  - ./kafka-topics.sh --delete --topic second-topic --bootstrap-server localhost:9092  
 
 
 *** 

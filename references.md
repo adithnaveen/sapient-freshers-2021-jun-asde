@@ -83,3 +83,9 @@ React-Redux-Thunk Animated Video
 > https://redux.js.org/tutorials/fundamentals/part-6-async-logic
 
 
+ Design Principles
+> https://www.youtube.com/watch?v=llGgO74uXMI&ab_channel=Devoxx
+
+
+ React Router JWT Authentication 
+> https://jasonwatmore.com/post/2017/12/07/react-redux-jwt-authentication-tutorial-example
