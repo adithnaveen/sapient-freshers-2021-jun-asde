@@ -2808,7 +2808,6 @@ Working with Kafka
 - Step 8 - to delete a topic 
   - ./kafka-topics.sh --delete --topic second-topic --bootstrap-server localhost:9092  
 
-
 *** 
 *** 
 
