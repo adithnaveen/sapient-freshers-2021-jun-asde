@@ -1,0 +1,169 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author:naveen@probits.in"
+      }
+    ],
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4177295296,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the driver is loaded",
+            "match": {
+              "location": "RegistrationStep.the_driver_is_loaded()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5092591,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "url is \"http://elearning.upskills.in/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://elearning.upskills.in/",
+                  "offset": 8
+                }
+              ],
+              "location": "RegistrationStep.url_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3890319439,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "page is loaded",
+            "match": {
+              "location": "RegistrationStep.page_is_loaded()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "register valid user",
+        "description": "",
+        "id": "to-register-user-as-learner;register-valid-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2008379875,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the registration page",
+            "match": {
+              "location": "RegistrationStep.the_registration_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150822178,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "when the user name is \"naveen\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "naveen",
+                  "offset": 23
+                }
+              ],
+              "location": "RegistrationStep.when_the_user_name_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90828370,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "lastname is \"kumar\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "kumar",
+                  "offset": 13
+                }
+              ],
+              "location": "RegistrationStep.password_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 97171024,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "email is \"adith.naveen@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "adith.naveen@gmail.com",
+                  "offset": 10
+                }
+              ],
+              "location": "RegistrationStep.email_is(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46535,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click on submit button",
+            "match": {
+              "location": "RegistrationStep.click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25370,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "check if user is registered",
+            "match": {
+              "location": "RegistrationStep.check_if_user_is_registered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "To register user as learner",
+    "description": "",
+    "id": "to-register-user-as-learner",
+    "keyword": "Feature",
+    "uri": "registration.feature"
+  }
+]
