@@ -2809,6 +2809,21 @@ Working with Kafka
   - ./kafka-topics.sh --delete --topic second-topic --bootstrap-server localhost:9092  
 
 *** 
+
+SDET -> ASDE 
+
+- junit -> parameterization -> jmeter / gatline / locust 
+- rest assured -> API -> jmeter / gatline / locust / soapui 
+- e2e -> Selenium ->(protractor, ranorex, browserstack, appium etc)
+
+
+
+> Chrome -> every week 
+> Firefox -> every week 
+> Edge -> every week 
+> Safari -> every week 
+> opera -> every week 
+
 *** 
 
 
