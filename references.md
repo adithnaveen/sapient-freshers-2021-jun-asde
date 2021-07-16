@@ -89,3 +89,14 @@ React-Redux-Thunk Animated Video
 
  React Router JWT Authentication 
 > https://jasonwatmore.com/post/2017/12/07/react-redux-jwt-authentication-tutorial-example
+
+
+Conventional Commits 
+> https://www.conventionalcommits.org/en/v1.0.0/
+
+Test Pyramid 
+> https://martinfowler.com/articles/practical-test-pyramid.html#TheTestPyramid
+
+
+
+
