@@ -77,3 +77,35 @@ const Hello =() => {
 
 
 
+bitan - 
+krishna - configure and write test case using testing library - test here 
+sanjana (writing atomic component - button, form, navbar, footer, alert, card)
+sushruth - setup react + redux (writing atomic component)  -
+pradhuman + deepanjan + karmanya - create S3 bucket + create a folder public folder - where all the assets will go 
+(Developer -> bitbucket) -> prod version -> .js -> have to go to s3 with shell jenkins (aws cli)
+
+
+sonar(PS) + sonar (EC2)
+building with jenkins 
+unit test 
+dockerization 
+profiles 
+
+
+5 (backend- prateek, kanav, aarsh, akhil, rizwan, akshit)
+	application.properties  - to run with test 
+	application_dev.properties  - differnt system with test + code coverage
+	application_prod.properties - no test 
+	DTO 
+	
+	
+5 (frontend - deepanjan, harshit, karmanya, aneesha, siddhart)
+	you should not push the code to "release branch" when "eslist" rules violates 
+
+DevOps 
+
+Host - sailaja + hemanth 
+
+NAT, Security, VPC, IG, S3 , ec2 
+
+
