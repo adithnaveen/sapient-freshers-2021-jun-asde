@@ -13,27 +13,69 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Document
-@Data
-@NoArgsConstructor
-//@AllArgsConstructor
-public class User  {
+// @Data
+// @NoArgsConstructor
+// @AllArgsConstructor
+public class User {
+	public User() {
+	}
 
 	@Id
 	private Integer id;
 	private String name;
-	private double income; 
+	private double income;
 	private Date dob;
-	
+
 	@JsonCreator
-	public User(@JsonProperty("id") Integer id, @JsonProperty("name") String name, 
+	public User(@JsonProperty("id") Integer id, @JsonProperty("name") String name,
 			@JsonProperty("income") double income, @JsonProperty("dob") Date dob) {
 		super();
 		this.id = id;
-		this.name = name;
-		this.income = income;
+		this.setName(name);
+		this.setIncome(income);
+		this.setDob(dob);
+	}
+
+	/**
+	 * @return the dob
+	 */
+	public Date getDob() {
+		return dob;
+	}
+
+	/**
+	 * @param dob the dob to set
+	 */
+	public void setDob(Date dob) {
 		this.dob = dob;
 	}
-	
-	
-	
+
+	/**
+	 * @return the income
+	 */
+	public double getIncome() {
+		return income;
+	}
+
+	/**
+	 * @param income the income to set
+	 */
+	public void setIncome(double income) {
+		this.income = income;
+	}
+
+	/**
+	 * @return the name
+	 */
+	public String getName() {
+		return name;
+	}
+
+	/**
+	 * @param name the name to set
+	 */
+	public void setName(String name) {
+		this.name = name;
+	}
+
 }
