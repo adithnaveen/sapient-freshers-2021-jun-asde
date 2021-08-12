@@ -109,3 +109,46 @@ Host - sailaja + hemanth
 NAT, Security, VPC, IG, S3 , ec2 
 
 
+
+
+###  terraform commands 
+1019  mkdir terraform-works
+ 1020  cd terraform-works
+ 1021  clear
+ 1022  pwd
+ 1023  vi first.tf
+ 1024  terraform init 
+ 1025  ls
+ 1026  terraform apply 
+ 1027  terraform destroy
+ 1028  clear
+ 1029  terraform plan 
+ 1030  clear
+ 1031  terraform plan -out=first-plan.plan
+ 1032  ls
+ 1033  terraform show first-plan.plan
+ 1034  vi first-plan.plan
+ 1035  terraform state 
+ 1036  terraform state list
+ 1037  terraform apply 
+ 1038  terraform state list
+ 1039  terraform state show aws_s3_bucket.sapient-tf-training
+ 1040  terraform graph
+
+
+
+ db.campigns.createIndex({"cardType.type":1});
+
+
+ db.campigns.createIndex({"cardType.type":-1, "cardType.provider":1});
+
+ db.campigns.createIndex({"cardType.type":1, "cardType.provider":-1});
+
+ 
+ db.campigns.find({"cardType.type":"debit"}).hint({"cardType.type":1}).explain("executionStats");
+
+
+
+ List of port numbers used for MS 
+ + DB 
+ 
