@@ -1,0 +1,28 @@
+
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /users
+Host: localhost:9090
+Accept: application/json
+
+
+###
+POST /users
+Host: localhost:9090
+Accept: application/json
+Content-Type: application/json
+
+
+ {
+    "id": 102,
+    "name": "Naveen",
+    "income": 1234.0,
+    "dob": "2022-02-14T10:36:52.669+00:00"
+  }
+
+#### 
+GET /users/102
+Host: localhost:9090
+Accept: application/json

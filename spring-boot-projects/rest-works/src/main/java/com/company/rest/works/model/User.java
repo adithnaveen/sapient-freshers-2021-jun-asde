@@ -24,6 +24,14 @@ public class User {
 	private Integer id;
 	private String name;
 	private double income;
+
+	public Integer getId() {
+		return this.id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
 	private Date dob;
 
 	@JsonCreator
